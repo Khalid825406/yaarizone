@@ -4,6 +4,7 @@ import { Hero } from './components/sections/Hero';
 import { Features } from './components/sections/Features';
 import { About } from './components/sections/About';
 import { ParticlesBackground } from './components/ui-custom/ParticlesBackground';
+import { Testimonials } from './components/sections/Testimonial';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Hero />
         <Features />
         <About />
+        <Testimonials/>
       </main>
       
       {/* Footer */}
