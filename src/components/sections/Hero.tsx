@@ -46,7 +46,7 @@ export function Hero() {
           {/* LEFT — Text Slider */}
           <div className="flex flex-col items-center text-center md:items-start md:text-left order-2 md:order-1">
             {/* Fixed min-height prevents layout shift during slide transitions */}
-            <div className="min-h-[220px] sm:min-h-[260px] w-full">
+            <div className="min-h-[150px] sm:min-h-[260px] w-full">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={index}
@@ -91,7 +91,7 @@ export function Hero() {
               On mobile: smaller height so it doesn't dominate the screen.
               On tablet+: standard 600px height.
             */}
-            <div className="relative w-[200px] sm:w-[260px] md:w-[300px] lg:w-[340px] xl:w-[360px] h-[380px] sm:h-[480px] md:h-[560px] lg:h-[600px]">
+            <div className="relative w-[300px] sm:w-[260px] md:w-[300px] lg:w-[340px] xl:w-[360px] h-[380px] sm:h-[480px] md:h-[560px] lg:h-[600px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={index}
