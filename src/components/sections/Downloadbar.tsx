@@ -17,7 +17,7 @@ export function DownloadBar() {
       "
     >
       <a
-        href="https://play.google.com/store/apps/details?id=com.real11.realfrnd"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         className="

@@ -335,8 +335,8 @@ export default function Terms() {
 
           <div className="bg-gray-50 border rounded-xl p-4 sm:p-6 space-y-2 text-sm sm:text-base mb-8">
             <p className="font-semibold text-gray-800 mb-3">Grievance Officer Details:</p>
-            <p><strong>Name:</strong> Amit Sharma</p>
-            <p><strong>Address:</strong> D 219, 1st Floor, Sector 63, Noida 201301</p>
+            <p><strong>Name:</strong> Deepak Shakhya</p>
+            <p><strong>Address:</strong> New Delhi</p>
             <p>
               <strong>Email:</strong>{" "}
               <a href="mailto:support@realfrnd.com" className="text-blue-600 hover:underline">
