@@ -5,26 +5,30 @@ import { Features } from './components/sections/Features';
 import { About } from './components/sections/About';
 import { ParticlesBackground } from './components/ui-custom/ParticlesBackground';
 import { Testimonials } from './components/sections/Testimonial';
+import { DownloadBar } from './components/sections/Downloadbar';
 
 function App() {
   return (
     <div className="relative min-h-screen bg-background overflow-x-hidden">
       {/* Particle Background */}
       <ParticlesBackground />
-      
+
       {/* Navbar */}
       <Navbar />
-      
+
       {/* Main Content */}
-      <main className="relative z-10">
+      <main className="relative z-10 pb-20 sm:pb-24">
         <Hero />
         <Features />
         <About />
-        <Testimonials/>
+        <Testimonials />
       </main>
-      
+
       {/* Footer */}
       <Footer />
+
+      {/* ✅ Sirf homepage pe show hoga */}
+      <DownloadBar />
     </div>
   );
 }

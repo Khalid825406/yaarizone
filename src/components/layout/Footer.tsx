@@ -1,165 +1,149 @@
-import Link from 'next/link';
-import { Instagram, Twitter, Facebook, Youtube, Mail, MapPin, Phone } from 'lucide-react';
+'use client';
 
-const footerLinks = {
-  product: [
-    { name: 'Features', href: '#features' },
-    { name: 'Download', href: '#download' },
-    { name: 'Pricing', href: '#' },
-    { name: 'Updates', href: '#' },
-  ],
-  company: [
-    { name: 'About Us', href: '#about' },
-    { name: 'Careers', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Press', href: '#' },
-  ],
-  legal: [
-    { name: 'Terms of Service', href: '/terms' },
-    { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Cookie Policy', href: '#' },
-    { name: 'GDPR', href: '#' },
-  ],
-  support: [
-    { name: 'Help Center', href: '#' },
-    { name: 'Contact Us', href: '#' },
-    { name: 'Community', href: '#' },
-    { name: 'Feedback', href: '#' },
-  ],
-};
+import Link from 'next/link';
+import {
+  Instagram,
+  Twitter,
+  Facebook,
+  Youtube,
+  Mail,
+} from 'lucide-react';
 
 const socialLinks = [
-  { name: 'Instagram', icon: Instagram, href: '#' },
-  { name: 'Twitter', icon: Twitter, href: '#' },
-  { name: 'Facebook', icon: Facebook, href: '#' },
-  { name: 'YouTube', icon: Youtube, href: '#' },
+  { Icon: Instagram, label: 'Instagram', href: '#' },
+  { Icon: Twitter, label: 'Twitter', href: '#' },
+  { Icon: Facebook, label: 'Facebook', href: '#' },
+  { Icon: Youtube, label: 'YouTube', href: '#' },
 ];
 
-function FooterLink({ href, name }: { href: string; name: string }) {
-  if (href.startsWith('/')) {
-    return (
-      <Link href={href} className="text-white/60 hover:text-white transition-colors duration-300 text-sm">
-        {name}
-      </Link>
-    );
-  }
-
-  return (
-    <a href={href} className="text-white/60 hover:text-white transition-colors duration-300 text-sm">
-      {name}
-    </a>
-  );
-}
+const footerLinks = [
+  {
+    links: [
+      { label: 'About Us', href: '#about' },
+      { label: 'Terms & Conditions', href: '/terms' },
+      { label: 'Privacy Policy', href: '/privacy' },
+    ],
+  },
+  {
+    links: [
+      { label: 'Account Deletion', href: '#' },
+      { label: 'Become a Host', href: '#' },
+      { label: 'Blogs', href: '#' },
+    ],
+  },
+  {
+    links: [
+      { label: 'Coins Policy', href: '#' },
+      { label: 'Community Guidelines', href: '#' },
+    ],
+  },
+];
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-yaari-blue/20 rounded-full blur-[120px]" />
-        <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-yaari-pink/20 rounded-full blur-[120px]" />
-      </div>
+    <footer className="bg-[#070B14] text-white">
 
-      <div className="relative z-10">
-        <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-20 py-16 lg:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-8">
-            <div className="lg:col-span-2">
-              <Link href="/" className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gradient-blue flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">Y</span>
-                </div>
-                <span className="text-2xl font-bold text-white">
-                  Yaari <span className="gradient-text">Zone</span>
-                </span>
-              </Link>
-              <p className="text-white/60 mb-6 max-w-sm leading-relaxed">
-                Connect with real friends anytime, anywhere. Chat, video call, and meet new people easily with Yaari Zone.
-              </p>
+      {/* ── CONTACT BAND ── */}
+      <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-20 py-8 sm:py-10 lg:py-12 border-b border-white/10">
+        <div className="flex flex-col sm:flex-row justify-between gap-6 sm:items-center">
 
-              <div className="space-y-3">
-                <div className="flex items-center gap-3 text-white/60">
-                  <Mail className="w-4 h-4 text-yaari-blue-light" />
-                  <span className="text-sm">support@yaarizone.com</span>
-                </div>
-                <div className="flex items-center gap-3 text-white/60">
-                  <Phone className="w-4 h-4 text-yaari-blue-light" />
-                  <span className="text-sm">+1 (555) 123-4567</span>
-                </div>
-                <div className="flex items-center gap-3 text-white/60">
-                  <MapPin className="w-4 h-4 text-yaari-blue-light" />
-                  <span className="text-sm">San Francisco, CA</span>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-white font-semibold mb-5">Product</h3>
-              <ul className="space-y-3">
-                {footerLinks.product.map((link) => (
-                  <li key={link.name}>
-                    <FooterLink href={link.href} name={link.name} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-white font-semibold mb-5">Company</h3>
-              <ul className="space-y-3">
-                {footerLinks.company.map((link) => (
-                  <li key={link.name}>
-                    <FooterLink href={link.href} name={link.name} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-white font-semibold mb-5">Legal</h3>
-              <ul className="space-y-3">
-                {footerLinks.legal.map((link) => (
-                  <li key={link.name}>
-                    <FooterLink href={link.href} name={link.name} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-white font-semibold mb-5">Support</h3>
-              <ul className="space-y-3">
-                {footerLinks.support.map((link) => (
-                  <li key={link.name}>
-                    <FooterLink href={link.href} name={link.name} />
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Left text */}
+          <div>
+            <h2 className="text-base sm:text-lg font-semibold mb-1.5 sm:mb-2 tracking-wide">
+              CONTACT US
+            </h2>
+            <p className="text-white/60 max-w-sm text-xs sm:text-sm leading-relaxed">
+              We're here for you! Our trained experts are ready to help you anytime.
+            </p>
           </div>
-        </div>
 
-        <div className="border-t border-white/10">
-          <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-20 py-6">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-white/50 text-sm text-center md:text-left">
-                Copyright {new Date().getFullYear()} Yaari Zone. All rights reserved.
-              </p>
-
-              <div className="flex items-center gap-4">
-                {socialLinks.map((social) => (
-                  <a
-                    key={social.name}
-                    href={social.href}
-                    className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-                    aria-label={social.name}
-                  >
-                    <social.icon className="w-4 h-4" />
-                  </a>
-                ))}
-              </div>
+          {/* Mail card */}
+          <a
+            href="mailto:support@yaarizone.com"
+            className="bg-gradient-to-r from-blue-700 to-blue-900
+              px-5 py-3.5 sm:px-6 sm:py-4
+              rounded-2xl flex items-center gap-3 sm:gap-4
+              w-full sm:w-auto
+              hover:brightness-110 active:scale-[0.98]
+              transition-all duration-200"
+          >
+            <div className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center bg-white/10 rounded-lg shrink-0">
+              <Mail className="text-white w-4 h-4 sm:w-5 sm:h-5" />
             </div>
-          </div>
+            <div className="min-w-0">
+              <p className="text-xs sm:text-sm text-white/70">Mail Us:</p>
+              <p className="font-semibold text-white text-sm sm:text-base truncate">
+                support@yaarizone.com
+              </p>
+            </div>
+          </a>
+
         </div>
       </div>
+
+      {/* ── MAIN FOOTER GRID ── */}
+      <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-20 py-10 sm:py-12">
+        {/*
+          Mobile  : 2-col grid (logo spans full, then pairs of link columns)
+          Tablet  : 2-col
+          Desktop : 4-col
+        */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+
+          {/* BRAND + SOCIAL — spans 2 cols on mobile so it gets full width */}
+          <div className="col-span-2 lg:col-span-1">
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-3 sm:mb-4">
+              Yaari Zone
+            </h2>
+            <p className="text-white/50 text-xs sm:text-sm mb-5 max-w-xs leading-relaxed">
+              Connecting real people through real conversations.
+            </p>
+            <div className="flex gap-2.5 sm:gap-3">
+              {socialLinks.map(({ Icon, label, href }) => (
+                <a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center
+                    rounded-full bg-white/10 hover:bg-white/20 active:scale-95
+                    transition-all duration-200"
+                >
+                  <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* LINK COLUMNS */}
+          {footerLinks.map((group, gi) => (
+            <div key={gi} className="space-y-3">
+              {group.links.map(({ label, href }) => (
+                <Link
+                  key={label}
+                  href={href}
+                  className="block text-white/60 hover:text-white text-xs sm:text-sm
+                    transition-colors duration-200 leading-relaxed"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+          ))}
+
+        </div>
+      </div>
+
+      {/* ── COPYRIGHT ── */}
+      <div className="border-t border-white/10">
+        <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-20 py-5 sm:py-6
+          flex flex-col sm:flex-row items-center justify-between gap-2 text-white/40 text-xs sm:text-sm">
+          <span>
+            Copyright © {new Date().getFullYear()} – Yaari Zone | All rights reserved
+          </span>
+          <span className="hidden sm:block">Made with ♥ Brave Solution</span>
+        </div>
+      </div>
+
     </footer>
   );
 }

@@ -1,0 +1,38 @@
+/* globals.css */
+
+.bg-image {
+  background-image: url('/common-wv.webp');
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* iOS fix */
+  width: 100%;
+  height: 100%;
+
+  /* Default: mobile */
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  .bg-image {
+    background-size: cover;
+    background-position: center 30%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .bg-image {
+    background-size: contain; /* FULL image visible */
+    background-position: center;
+  }
+}
+
+/* XL Screens */
+@media (min-width: 1280px) {
+  .bg-image {
+    background-size: cover;
+    background-position: center;
+  }
+}
