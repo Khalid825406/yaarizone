@@ -31,7 +31,7 @@ export function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % slides.length);
-    }, 100000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 

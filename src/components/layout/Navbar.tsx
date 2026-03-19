@@ -1,7 +1,7 @@
 'use client';
-
+import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
@@ -67,16 +67,20 @@ export function Navbar() {
         <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-[114px]">
           <div className="flex items-center justify-between h-11 sm:h-auto">
 
-            {/* LOGO */}
-            <Link href="/" className="flex items-center gap-2 sm:gap-3 group shrink-0">
-              <div className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-blue flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-110">
-                <span className="text-white font-bold text-base sm:text-lg">Y</span>
-                <div className="absolute inset-0 bg-gradient-pink opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <span className="text-lg sm:text-xl font-bold text-white">
-                Yaari <span className="gradient-text">Zone</span>
-              </span>
-            </Link>
+<Link href="/" className="flex items-center gap-3 sm:gap-4 group shrink-0">
+
+  {/* LOGO IMAGE */}
+  <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl overflow-hidden transition-transform duration-300 group-hover:scale-110">
+    <Image
+      src="/logo1.png"
+      alt="Yaari Zone Logo"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
+
+</Link>
 
             {/* DESKTOP LINKS */}
             <div className="hidden md:flex items-center gap-6 lg:gap-8">
@@ -157,12 +161,15 @@ export function Navbar() {
         {/* Drawer header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
           <Link href="/" onClick={closeMobileMenu} className="flex items-center gap-2.5">
-            <div className="relative w-8 h-8 rounded-xl bg-gradient-blue flex items-center justify-center overflow-hidden">
-              <span className="text-white font-bold text-sm">Y</span>
-            </div>
-            <span className="text-base font-bold text-white">
-              Yaari <span className="gradient-text">Zone</span>
-            </span>
+             <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl overflow-hidden transition-transform duration-300 group-hover:scale-110">
+    <Image
+      src="/logo1.png"
+      alt="Yaari Zone Logo"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
           </Link>
           <button
             onClick={closeMobileMenu}
