@@ -44,7 +44,7 @@ export function Footer() {
     <footer className="bg-[#070B14] text-white">
 
       {/* ── CONTACT BAND ── */}
-      <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-20 py-8 sm:py-10 lg:py-12 border-b border-white/10">
+      <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-[114px] py-8 sm:py-10 lg:py-12 border-b border-white/10">
         <div className="flex flex-col sm:flex-row justify-between gap-6 sm:items-center">
 
           {/* Left text */}
@@ -82,7 +82,7 @@ export function Footer() {
       </div>
 
       {/* ── MAIN FOOTER GRID ── */}
-      <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-20 py-10 sm:py-12">
+      <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-[114] py-10 sm:py-12">
         {/*
           Mobile  : 2-col grid (logo spans full, then pairs of link columns)
           Tablet  : 2-col
@@ -135,7 +135,7 @@ export function Footer() {
 
       {/* ── COPYRIGHT ── */}
       <div className="border-t border-white/10">
-        <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-20 py-5 sm:py-6
+        <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-[114px] py-5 sm:py-6
           flex flex-col sm:flex-row items-center justify-between gap-2 text-white/40 text-xs sm:text-sm">
           <span>
             Copyright © {new Date().getFullYear()} – Yaari Zone | All rights reserved

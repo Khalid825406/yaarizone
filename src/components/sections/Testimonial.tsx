@@ -1,57 +1,27 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Content Creator",
-    avatar: "SJ",
+    name: "Priyanka",
+    image: "/user1.png",
     content:
-      "Yaari Zone has completely transformed how I connect with my audience.",
-    rating: 5,
-    gradient: "from-yaari-blue to-yaari-blue-light",
+      "Mujhe lagta tha online dosti fake hoti hai, but RealFrnd pe mujhe genuine like-minded log mile. Yahan pics ki tension hi nahi, bas audio/video mein securely baatein karo dil se. Ab toh roz naye logon se baatein karti hoon.",
   },
   {
-    name: "Michael Chen",
-    role: "Software Engineer",
-    avatar: "MC",
-    content: "Privacy features and encryption give me peace of mind.",
-    rating: 5,
-    gradient: "from-yaari-pink to-yaari-purple",
+    name: "Suhani",
+    image: "/user2.png",
+    content:
+      "Since I joined Real Frnd, other apps felt too much like dating or just scrolling. It’s more about real talks and finding people who actually vibe with you. Honestly feels safe and chill here.",
   },
   {
-    name: "Emma Williams",
-    role: "College Student",
-    avatar: "EW",
-    content: "Met amazing friends here. Chat rooms are awesome!",
-    rating: 5,
-    gradient: "from-yaari-purple to-yaari-pink",
-  },
-  {
-    name: "David Park",
-    role: "Business Owner",
-    avatar: "DP",
-    content: "Perfect for team communication. Game changer!",
-    rating: 5,
-    gradient: "from-yaari-blue to-yaari-purple",
-  },
-  {
-    name: "Lisa Anderson",
-    role: "Travel Blogger",
-    avatar: "LA",
-    content: "Staying connected while traveling is super easy.",
-    rating: 5,
-    gradient: "from-yaari-pink to-yaari-blue",
-  },
-  {
-    name: "James Miller",
-    role: "Music Producer",
-    avatar: "JM",
-    content: "Audio quality is insane. No lag at all.",
-    rating: 5,
-    gradient: "from-yaari-purple to-yaari-blue-light",
+    name: "Gautam",
+    image: "/user3.png",
+    content:
+      "I joined just to try, but ended up staying because it doesn’t feel fake. No pressure of photos, no judgement – just people talking and having fun. I even made a small group that feels like fam now.",
   },
 ];
 
@@ -60,23 +30,21 @@ export function Testimonials() {
   const [cardsToShow, setCardsToShow] = useState(3);
 
   useEffect(() => {
-    const updateCards = () => {
+    const update = () => {
       if (window.innerWidth < 640) setCardsToShow(1);
       else if (window.innerWidth < 1024) setCardsToShow(2);
       else setCardsToShow(3);
     };
 
-    updateCards();
-    window.addEventListener("resize", updateCards);
-
-    return () => window.removeEventListener("resize", updateCards);
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
   }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
     }, 4000);
-
     return () => clearInterval(interval);
   }, [index, cardsToShow]);
 
@@ -95,22 +63,18 @@ export function Testimonials() {
   };
 
   return (
-    <section className="py-24 overflow-hidden">
-      
-      {/* ✅ 90% container */}
-      <div className="w-[90%] mx-auto">
+    <section className="bg-[#f3f4f6] ">
+      <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Heading */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white">
-            Loved by <span className="gradient-text">Millions</span>
-          </h2>
-        </div>
+        <h2 className="text-center text-3xl sm:text-4xl font-bold text-gray-900 mb-16">
+          Our users love us ❤️
+        </h2>
 
         {/* Slider */}
-        <div className="relative ">
+        <div className="relative">
 
-          <div className="overflow-hidden py-8 ">
+          <div className="overflow-hidden">
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{
@@ -127,46 +91,36 @@ export function Testimonials() {
                     minWidth: `${100 / cardsToShow}%`,
                   }}
                 >
-                  <div className="glass-card p-6 h-full rounded-2xl hover:scale-105 transition-all duration-300">
-
-                    {/* Quote */}
-                    <Quote className="w-8 h-8 mb-3 opacity-30" />
-
-                    {/* Stars */}
-                    <div className="flex gap-1 mb-3">
-                      {[...Array(item.rating)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className="w-4 h-4 fill-yellow-400 text-yellow-400"
-                        />
-                      ))}
-                    </div>
-
-                    {/* Content */}
-                    <p className="text-white/80 mb-4 text-sm leading-relaxed">
-                      "{item.content}"
-                    </p>
+                  {/* Card */}
+                  <div className="bg-white rounded-[32px] p-8 shadow-sm hover:shadow-md transition h-full">
 
                     {/* User */}
-                    <div className="flex items-center gap-3 mt-auto">
-                      <div
-                        className={`w-10 h-10 rounded-full bg-gradient-to-br ${item.gradient} flex items-center justify-center`}
-                      >
-                        <span className="text-white text-sm font-bold">
-                          {item.avatar}
-                        </span>
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-14 h-14 rounded-full overflow-hidden">
+                        <Image
+                          src={item.image}
+                          alt={item.name}
+                          width={56}
+                          height={56}
+                          className="object-cover"
+                        />
                       </div>
 
                       <div>
-                        <h4 className="text-white text-sm font-semibold">
+                        <h3 className="text-lg font-semibold text-gray-900">
                           {item.name}
-                        </h4>
-                        <p className="text-white/50 text-xs">
-                          {item.role}
-                        </p>
+                        </h3>
+
+                        <div className="text-yellow-400 text-sm">
+                          ★★★★★
+                        </div>
                       </div>
                     </div>
 
+                    {/* Content */}
+                    <p className="text-gray-700 leading-relaxed text-sm">
+                      “{item.content}”
+                    </p>
                   </div>
                 </div>
               ))}
@@ -176,19 +130,20 @@ export function Testimonials() {
           {/* Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute -left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-2 rounded-full"
+            className="absolute -left-4 top-1/2 -translate-y-1/2 bg-white shadow p-2 rounded-full hover:bg-gray-100"
           >
-            <ChevronLeft />
+            <ChevronLeft  className="text-black"/>
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute -right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-2 rounded-full"
+            className="absolute -right-4 top-1/2 -translate-y-1/2 bg-white shadow p-2 rounded-full hover:bg-gray-100"
           >
-            <ChevronRight />
+            <ChevronRight className="text-black"/>
           </button>
+
         </div>
       </div>
     </section>
   );
-} 
+}

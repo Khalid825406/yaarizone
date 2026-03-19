@@ -7,22 +7,22 @@ import Image from "next/image";
 export function Hero() {
   const slides = [
     {
-      image: "/hero-02.webp",
-      title: "RealFrnd:",
-      subtitle: "Where Real Bonds Begin",
-      desc: "Connect instantly with real people through voice.",
+      image: "/hero-01.webp",
+      title: "First Call",
+      subtitle: "only ₹1",
+      desc: "Start the Talk, Start the fun",
     },
     {
       image: "/hero-02.webp",
-      title: "Voice First Experience",
-      subtitle: "Talk Freely",
-      desc: "Enjoy smooth and clear voice conversations anytime.",
+      title: "Voice & Video ",
+      subtitle: " Calls",
+      desc: "Call & Connect now",
     },
     {
-      image: "/hero-02.webp",
-      title: "Real Connections",
-      subtitle: "No Filters Needed",
-      desc: "Build genuine connections with just your voice.",
+      image: "/hero-03.webp",
+      title: "RealFrnd: ",
+      subtitle: " Where Real  ",
+      desc: "  Bonds Begin",
     },
   ];
 
@@ -31,90 +31,140 @@ export function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % slides.length);
-    }, 3000);
+    }, 100000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="relative min-h-[85vh] flex items-center overflow-hidden pt-16 sm:pt-20">
+    <section className="relative min-h-[80vh] overflow-hidden pt-16 sm:pt-20">
+
       {/* Background */}
-      <div className="absolute inset-0 animated-bg" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.25),transparent_40%),radial-gradient(circle_at_80%_0%,rgba(139,92,246,0.2),transparent_40%),#020617]" />
 
-      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-20 py-10 sm:py-0">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12">
+      {/* ── MOBILE layout (< md): stacked, image below text ── */}
+      <div className="md:hidden relative z-10 flex flex-col min-h-[80vh]">
 
-          {/* LEFT — Text Slider */}
-          <div className="flex flex-col items-center text-center md:items-start md:text-left order-2 md:order-1">
-            {/* Fixed min-height prevents layout shift during slide transitions */}
-            <div className="min-h-[150px] sm:min-h-[260px] w-full">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: 30 }}
-                  transition={{ duration: 0.45 }}
-                >
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                    {slides[index].title}
-                    <br />
-                    <span className="gradient-text">{slides[index].subtitle}</span>
-                  </h1>
-
-                  <p className="text-white/70 text-base sm:text-lg mb-6 sm:mb-8 max-w-sm mx-auto md:mx-0">
-                    {slides[index].desc}
-                  </p>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-           
-
-            {/* Play Store Button */}
-            <a
-              href="https://play.google.com/store/apps/details?id=com.real11.realfrnd"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block hover:scale-105 active:scale-95 transition-transform duration-200"
+        {/* Text block */}
+        <div className="px-6 pt-10 pb-6">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -24 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 24 }}
+              transition={{ duration: 0.4 }}
             >
-              <img
-                src="/google-play.png"
-                alt="Get it on Google Play"
-                className="h-10 sm:h-12"
-              />
-            </a>
-          </div>
+              <h1 className="text-4xl font-extrabold text-white leading-tight mb-2">
+                {slides[index].title}
+                <br />
+                <span className="gradient-text">{slides[index].subtitle}</span>
+              </h1>
+              <p className="text-3xl font-bold text-white leading-tight">
+                {slides[index].desc}
+              </p>
+            </motion.div>
+          </AnimatePresence>
 
-          {/* RIGHT — Image Slider */}
-          <div className="flex justify-center md:justify-end order-1 md:order-2">
-            {/*
-              On mobile: smaller height so it doesn't dominate the screen.
-              On tablet+: standard 600px height.
-            */}
-            <div className="relative w-[300px] sm:w-[260px] md:w-[300px] lg:w-[340px] xl:w-[360px] h-[380px] sm:h-[480px] md:h-[560px] lg:h-[600px]">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: 40 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -40 }}
-                  transition={{ duration: 0.45 }}
-                  className="absolute inset-0"
-                >
-                  <Image
-                    src={slides[index].image}
-                    alt={`App preview — ${slides[index].title}`}
-                    fill
-                    priority
-                    className="object-contain drop-shadow-2xl"
-                  />
-                </motion.div>
-              </AnimatePresence>
-            </div>
-          </div>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.real11.realfrnd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-6 backdrop-blur-md bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition"
+          >
+            <img src="/google-play.png" alt="Get it on Google Play" className="h-14" />
+          </a>
+        </div>
 
+        {/* Hero image — flush to bottom, centered, full visible */}
+        <div className="flex-1 flex items-end justify-center px-4 pb-0">
+          <div className="relative w-full max-w-[320px]">
+            <div className="absolute bottom-0 inset-x-0 h-[50%] blur-3xl bg-gradient-to-tr from-blue-500/30 via-purple-500/20 to-transparent rounded-full" />
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 32 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -32 }}
+                transition={{ duration: 0.4 }}
+                className="relative w-full"
+              >
+                <Image
+                  src={slides[index].image}
+                  width={460}
+                  height={780}
+                  priority
+                  className="w-full h-auto object-contain drop-shadow-2xl"
+                  alt="hero"
+                />
+              </motion.div>
+            </AnimatePresence>
+          </div>
         </div>
       </div>
+
+      {/* ── DESKTOP layout (≥ md): original design unchanged ── */}
+
+      {/* TEXT SECTION */}
+      <div className="hidden md:flex relative z-10 max-w-[85rem] mx-auto lg:pr-[114px] min-h-[80vh] items-center">
+        <div className="max-w-[42rem] pb-20 md:pb-0">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 30 }}
+              transition={{ duration: 0.45 }}
+            >
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                {slides[index].title}
+                <br />
+                <span className="gradient-text">
+                  {slides[index].subtitle}
+                </span>
+              </h1>
+              <p className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                {slides[index].desc}
+              </p>
+            </motion.div>
+          </AnimatePresence>
+
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block backdrop-blur-md bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition"
+          >
+            <img src="/google-play.png" alt="playstore" className="h-20 sm:h-16 w-[200px]" />
+          </a>
+        </div>
+      </div>
+
+      {/* IMAGE SECTION — original absolute positioning for desktop */}
+      <div className="hidden md:flex absolute bottom-0 right-0 left-auto justify-end px-6 lg:px-[114px] pointer-events-none">
+        <div className="relative w-[280px] sm:w-[320px] md:w-[360px] lg:w-[420px] xl:w-[460px]">
+          <div className="absolute bottom-0 w-full h-[60%] blur-3xl bg-gradient-to-tr from-blue-500/30 via-purple-500/20 to-transparent rounded-full" />
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -40 }}
+              transition={{ duration: 0.45 }}
+              className="w-full flex justify-center"
+            >
+              <Image
+                src={slides[index].image}
+                width={460}
+                height={780}
+                priority
+                className="object-contain drop-shadow-2xl translate-y-4 md:translate-y-0"
+                alt="hero"
+              />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </div>
+
     </section>
   );
 }

@@ -64,7 +64,7 @@ export function Navbar() {
           isScrolled ? 'navbar-glass py-3' : 'bg-transparent py-4 sm:py-5'
         }`}
       >
-        <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-20">
+        <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-[114px]">
           <div className="flex items-center justify-between h-11 sm:h-auto">
 
             {/* LOGO */}
