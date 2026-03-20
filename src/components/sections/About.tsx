@@ -37,7 +37,7 @@ export function About() {
             className="flex justify-start"
           >
             <Image
-              src="/letsTalk3.png" 
+              src="/lets.png" 
               alt="RealFrnd visual"
               width={500}
               height={500}

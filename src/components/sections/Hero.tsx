@@ -178,19 +178,19 @@ import Image from "next/image";
 export function Hero() {
   const slides = [
     {
-      image: "/hero-01.webp",
+      image: "/callpng01.png",
       title: "First Call",
       subtitle: "only ₹1",
       desc: "Start the Talk, Start the fun",
     },
     {
-      image: "/hero-02.webp",
+      image: "/callpng02.png",
       title: "Voice & Video ",
       subtitle: " Calls",
       desc: "Call & Connect now",
     },
     {
-      image: "/hero-03.webp",
+      image: "/callpng04.png",
       title: "RealFrnd: ",
       subtitle: " Where Real  ",
       desc: "  Bonds Begin",
