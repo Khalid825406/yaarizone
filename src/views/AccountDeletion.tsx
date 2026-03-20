@@ -92,7 +92,7 @@ export default function AccountDeletion() {
             }}
           >
             <span className="font-semibold text-gray-900">Important: </span>
-            If you decide to delete your Real Frnd account, please review the following information
+            If you decide to delete your Yaari Zone account, please review the following information
             carefully before proceeding. This action has permanent consequences and cannot be undone
             after the 30-day recovery window.
           </div>
@@ -160,11 +160,11 @@ export default function AccountDeletion() {
                 <strong>Monday to Friday, 10:00 AM – 6:00 PM</strong>.
               </p>
               <a
-                href="mailto:support@realfrnd.com"
+                href="mailto:support@yaarizone.com"
                 className="inline-flex items-center justify-center w-full text-white text-sm sm:text-base font-semibold py-2.5 rounded-xl transition-opacity hover:opacity-90 active:scale-[0.98]"
                 style={{ background: "linear-gradient(135deg, #e91e8c, #2563eb)" }}
               >
-                support@realfrnd.com
+                support@yaarizone.com
               </a>
             </Card>
 

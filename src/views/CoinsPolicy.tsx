@@ -82,7 +82,7 @@ export default function CoinsPolicy() {
             className="rounded-xl p-4 sm:p-5 mb-8 text-sm sm:text-base text-gray-700 leading-relaxed border"
             style={{ borderColor: "#e91e8c33", background: "linear-gradient(135deg, #fdf2f8, #eff6ff)" }}
           >
-            The Coins feature on Real Frnd is developed to make your interactions on the platform more
+            The Coins feature on Yaari Zone is developed to make your interactions on the platform more
             engaging, rewarding, and enjoyable. Coins are a virtual currency and are subject to the
             following terms and conditions. By purchasing, earning, or using Coins, you agree to this
             Coins Policy as well as our <strong>Terms of Use</strong> and{" "}
@@ -130,7 +130,7 @@ export default function CoinsPolicy() {
               <ul className="space-y-3">
                 <Bullet text="All Coin purchases are final and non-refundable." />
                 <Bullet text="No partial or full refunds will be issued for unused Coins, except where required by law." />
-                <Bullet text="In the event of payment errors, duplicate charges, or technical issues, users can contact Real Frnd Support for assistance." />
+                <Bullet text="In the event of payment errors, duplicate charges, or technical issues, users can contact Yaari Zone Support for assistance." />
               </ul>
               <Warning>
                 Valid claims will be reviewed and resolved in accordance with our refund process.
@@ -149,7 +149,7 @@ export default function CoinsPolicy() {
                     <p className="text-sm font-semibold text-gray-800 mb-2">Prohibited actions:</p>
                     <ul className="space-y-2.5">
                       <Bullet text="Hacking, cheating, or unauthorised transactions" />
-                      <Bullet text="Attempting to transfer or trade Coins outside the Real Frnd platform" />
+                      <Bullet text="Attempting to transfer or trade Coins outside the Yaari Zone platform" />
                       <Bullet text="Using fraudulent payment methods or raising false disputes/chargebacks" />
                     </ul>
                   </div>
@@ -180,7 +180,7 @@ export default function CoinsPolicy() {
             {/* 7 — CHANGES */}
             <Card icon={<FileEdit className="w-5 h-5" />} title="7. Changes to Coins Policy">
               <ul className="space-y-3">
-                <Bullet text="Real Frnd reserves the right to modify, suspend, or discontinue the Coins system at any time." />
+                <Bullet text="Yaari Zone reserves the right to modify, suspend, or discontinue the Coins system at any time." />
                 <Bullet text="Such changes may include pricing, validity, earning methods, or usage options." />
                 <Bullet text="Any updates will be communicated via email, in-app, or on our official website." />
                 <Bullet text="Continued use of Coins after changes indicates acceptance of the updated policy." />
@@ -196,12 +196,12 @@ export default function CoinsPolicy() {
                     available <strong>Monday to Friday, 10:00 AM – 6:00 PM</strong>.
                   </p>
                   <a
-                    href="mailto:support@realfrnd.com"
+                    href="mailto:support@yaarizone.com"
                     className="inline-flex items-center justify-center gap-2 text-white text-sm sm:text-base font-semibold px-6 py-2.5 rounded-xl transition-opacity hover:opacity-90 active:scale-[0.98] whitespace-nowrap shrink-0"
                     style={{ background: GRADIENT }}
                   >
                     <Mail className="w-4 h-4" />
-                    support@realfrnd.com
+                    support@yaarizone.com
                   </a>
                 </div>
               </Card>

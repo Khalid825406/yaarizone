@@ -104,7 +104,7 @@ export default function CommunityGuidelines() {
             style={{ borderColor: "#e91e8c33", background: "linear-gradient(135deg, #fdf2f8, #eff6ff)" }}
           >
             <p className="mb-3">
-              These Content and Community Guidelines ("Guidelines") govern your use of the Real Frnd
+              These Content and Community Guidelines ("Guidelines") govern your use of the Yaari Zone
               mobile application ("Platform"). They are a crucial part of and should be read in
               conjunction with the Platform's <strong>Terms of Use</strong> and{" "}
               <strong>Privacy Policy</strong>.
@@ -373,12 +373,12 @@ export default function CommunityGuidelines() {
                     </p>
                   </div>
                   <a
-                    href="mailto:support@realfrnd.com"
+                    href="mailto:support@yaarizone.com"
                     className="inline-flex items-center justify-center gap-2 text-white text-sm sm:text-base font-semibold px-6 py-2.5 rounded-xl transition-opacity hover:opacity-90 active:scale-[0.98] whitespace-nowrap shrink-0"
                     style={{ background: GRADIENT }}
                   >
                     <Mail className="w-4 h-4" />
-                    support@realfrnd.com
+                    support@yaarizone.com
                   </a>
                 </div>
               </Card>
@@ -393,8 +393,8 @@ export default function CommunityGuidelines() {
                   If your content is removed from our Platform, we will notify you and explain our
                   reasons. If you believe your content has been unfairly taken down, you can submit an
                   in-app appeal or contact us at{" "}
-                  <a href="mailto:support@realfrnd.com" className="text-blue-600 hover:underline font-medium">
-                    support@realfrnd.com
+                  <a href="mailto:support@yaarizone.com" className="text-blue-600 hover:underline font-medium">
+                    support@yaarizone.com
                   </a>{" "}
                   to contest the removal. We will review the content again and decide whether the appeal
                   is valid.
