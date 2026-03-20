@@ -57,15 +57,18 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Mail card */}
+          {/* Mail card — pink → blue gradient (logo colors) */}
           <a
             href="mailto:support@yaarizone.com"
-            className="bg-gradient-to-r from-blue-700 to-blue-900
-              px-5 py-3.5 sm:px-6 sm:py-4
+            className="px-5 py-3.5 sm:px-6 sm:py-4
               rounded-2xl flex items-center gap-3 sm:gap-4
               w-full sm:w-auto
               hover:brightness-110 active:scale-[0.98]
               transition-all duration-200"
+            style={{
+              background: "linear-gradient(90deg, #E91E8C 0%, #1565D8 100%)",
+              boxShadow: "0 4px 20px rgba(233,30,140,0.25)",
+            }}
           >
             <div className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center bg-white/10 rounded-lg shrink-0">
               <Mail className="text-white w-4 h-4 sm:w-5 sm:h-5" />
@@ -83,21 +86,22 @@ export function Footer() {
 
       {/* ── MAIN FOOTER GRID ── */}
       <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-[114] py-10 sm:py-12">
-        {/*
-          Mobile  : 2-col grid (logo spans full, then pairs of link columns)
-          Tablet  : 2-col
-          Desktop : 4-col
-        */}
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
 
-          {/* BRAND + SOCIAL — spans 2 cols on mobile so it gets full width */}
-          <div className="col-span-2 lg:col-span-1">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-3 sm:mb-4">
-              Yaari Zone
-            </h2>
-            <p className="text-white/50 text-xs sm:text-sm mb-5 max-w-xs leading-relaxed">
+          {/* BRAND + SOCIAL */}
+          <div className="col-span-2 lg:col-span-1 ">
+            {/* Brand name — pink → blue gradient text */}
+            <span
+              className="text-2xl sm:text-2xl text-white "
+              style={{ fontFamily: "'Pacifico', cursive" }}
+            >
+              YaariZone
+            </span>
+            <p className="text-white/50 text-xs sm:text-sm mb-5 max-w-xs leading-relaxed mt-[15px]">
               Connecting real people through real conversations.
             </p>
+
+            {/* Social icons — pink glow on hover */}
             <div className="flex gap-2.5 sm:gap-3">
               {socialLinks.map(({ Icon, label, href }) => (
                 <a
@@ -105,8 +109,11 @@ export function Footer() {
                   href={href}
                   aria-label={label}
                   className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center
-                    rounded-full bg-white/10 hover:bg-white/20 active:scale-95
+                    rounded-full bg-white/10 active:scale-95
                     transition-all duration-200"
+                  style={{ ["--hover-bg" as string]: "rgba(233,30,140,0.25)" }}
+                  onMouseEnter={e => (e.currentTarget.style.background = "rgba(233,30,140,0.25)")}
+                  onMouseLeave={e => (e.currentTarget.style.background = "rgba(255,255,255,0.10)")}
                 >
                   <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </a>

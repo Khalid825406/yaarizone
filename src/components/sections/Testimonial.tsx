@@ -9,7 +9,7 @@ const testimonials = [
     name: "Priyanka",
     image: "/user1.png",
     content:
-      "Mujhe lagta tha online dosti fake hoti hai, but RealFrnd pe mujhe genuine like-minded log mile. Yahan pics ki tension hi nahi, bas audio/video mein securely baatein karo dil se. Ab toh roz naye logon se baatein karti hoon.",
+      "Mujhe lagta tha online dosti fake hoti hai, but YaariZone pe mujhe genuine like-minded log mile. Yahan pics ki tension hi nahi, bas audio/video mein securely baatein karo dil se. Ab toh roz naye logon se baatein karti hoon.",
   },
   {
     name: "Suhani",

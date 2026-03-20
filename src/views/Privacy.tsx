@@ -22,7 +22,7 @@ export default function Privacy() {
       <HeroBanner title="Privacy Policy" />
 
       {/* MAIN CONTENT */}
-      <div className="max-w-[84rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+      <div className="max-w-[84rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 ">
         <div className="bg-white text-black rounded-2xl shadow-lg p-5 sm:p-8 md:p-10 border">
 
           {/* LAST UPDATED */}
@@ -271,8 +271,8 @@ export default function Privacy() {
             <p><strong>Address:</strong> New Delhi</p>
             <p>
               <strong>Email:</strong>{" "}
-              <a href="mailto:support@realfrnd.com" className="text-blue-600 hover:underline">
-                support@realfrnd.com
+              <a href="mailto:support@yaarizone.com" className="text-blue-600 hover:underline">
+                support@yaarizone.com
               </a>
             </p>
             <p><strong>Office Hours:</strong> 10:00 A.M. to 6:00 P.M. (Mon to Fri)</p>

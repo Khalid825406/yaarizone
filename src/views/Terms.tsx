@@ -195,8 +195,8 @@ export default function Terms() {
               is severe, we may temporarily suspend or permanently terminate your account. If you
               believe your content was removed in error or that your account was unjustly terminated,
               you may appeal by contacting us at{" "}
-              <a href="mailto:support@realfrnd.com" className="text-blue-600 hover:underline">
-                support@realfrnd.com
+              <a href="mailto:support@yaarizone.com" className="text-blue-600 hover:underline">
+                support@yaarizone.com
               </a>.
             </Commitment>
 
@@ -315,8 +315,8 @@ export default function Terms() {
             <li>
               <strong>Email Support:</strong> For general concerns or complaints, please send an email
               with subsequent proofs to{" "}
-              <a href="mailto:support@realfrnd.com" className="text-blue-600 hover:underline">
-                support@realfrnd.com
+              <a href="mailto:support@yaarizone.com" className="text-blue-600 hover:underline">
+                support@yaarizone.com
               </a>. You will receive an auto-generated ticket number to track the status of your
               complaint.
             </li>
@@ -339,8 +339,8 @@ export default function Terms() {
             <p><strong>Address:</strong> New Delhi</p>
             <p>
               <strong>Email:</strong>{" "}
-              <a href="mailto:support@realfrnd.com" className="text-blue-600 hover:underline">
-                support@realfrnd.com
+              <a href="mailto:support@yaarizone.com" className="text-blue-600 hover:underline">
+                support@yaarizone.com
               </a>
             </p>
             <p><strong>Office Hours:</strong> 10:00 A.M. to 6:00 P.M. (Mon to Fri)</p>

@@ -7,17 +7,17 @@ export default function RealFrndInfo() {
 
         {/* Heading */}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight text-center">
-          Welcome to RealFrnd - India's Trending Friendship App
+          Welcome to YaariZone - India's Trending Friendship App
         </h1>
 
         {/* Intro */}
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
           In the circle of likes, swipes, rejections, ghosting, and endless scrolling,
-          RealFrnd is here to make you feel what truly matters - real chatters and genuine connections.
+          YaariZone is here to make you feel what truly matters - real chatters and genuine connections.
         </p>
 
         <p className="text-gray-700 text-lg leading-relaxed mb-8">
-          Unlike other apps, RealFrnd is not just about perfect pictures and curated profiles;
+          Unlike other apps, YaariZone is not just about perfect pictures and curated profiles;
           it is a platform to meet friends online. In this space, people connect through audio,
           video, communities, and authentic, meaningful connections. With no filters and no pretenses,
           you meet people for who they are, not how they look.
@@ -25,7 +25,7 @@ export default function RealFrndInfo() {
 
         {/* Section */}
         <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-6">
-          What Makes RealFrnd Different?
+          What Makes YaariZone Different?
         </h2>
 
         <ul className="space-y-4 mb-10">
@@ -47,7 +47,7 @@ export default function RealFrndInfo() {
             <span className="font-semibold text-gray-900">
               Safe & Moderated
             </span>{" "}
-            - Verified spaces, active moderation, and community-driven safety make RealFrnd a trusted hangout.
+            - Verified spaces, active moderation, and community-driven safety make YaariZone a trusted hangout.
           </li>
 
           <li className="text-gray-700 text-lg">
@@ -60,18 +60,18 @@ export default function RealFrndInfo() {
 
         {/* Why Section */}
         <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-6">
-          Why RealFrnd?
+          Why YaariZone?
         </h2>
 
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
           Because friendships aren’t built on filters or timelines, they’re built on shared laughs,
-          late-night conversations, and finding people who just get you. RealFrnd is more than an app -
+          late-night conversations, and finding people who just get you. YaariZone is more than an app -
           it’s where strangers turn their voices into bonds.
         </p>
 
         <p className="text-gray-700 text-lg leading-relaxed">
           So, whether you’re here to make new friends online, share your passions, or just find someone
-          to talk to, RealFrnd is the perfect place for you.
+          to talk to, YaariZone is the perfect place for you.
         </p>
 
       </div>

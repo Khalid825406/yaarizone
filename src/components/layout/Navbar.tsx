@@ -1,13 +1,13 @@
-'use client';
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: 'Home', href: '/' },
-  { name: 'Terms', href: '/terms' },
-  { name: 'Privacy', href: '/privacy' },
+  { name: "Home", href: "/" },
+  { name: "Terms", href: "/terms" },
+  { name: "Privacy", href: "/privacy" },
 ];
 
 export function Navbar() {
@@ -18,29 +18,29 @@ export function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
     const handleEsc = (e: { key: string }) => {
-      if (e.key === 'Escape') setIsMobileMenuOpen(false);
+      if (e.key === "Escape") setIsMobileMenuOpen(false);
     };
-    document.addEventListener('keydown', handleEsc);
+    document.addEventListener("keydown", handleEsc);
 
     // Prevent body scroll; use fixed to avoid iOS bounce-scroll layout shift
     if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-      document.body.style.position = 'fixed';
-      document.body.style.width = '100%';
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
     } else {
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
     }
 
     return () => {
-      document.removeEventListener('keydown', handleEsc);
+      document.removeEventListener("keydown", handleEsc);
     };
   }, [isMobileMenuOpen]);
 
@@ -49,8 +49,8 @@ export function Navbar() {
     const handleResize = () => {
       if (window.innerWidth >= 768) setIsMobileMenuOpen(false);
     };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
@@ -61,41 +61,59 @@ export function Navbar() {
       {/* ── NAVBAR BAR ── */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled ? 'navbar-glass py-3' : 'bg-transparent py-4 sm:py-5'
+          isScrolled ? "navbar-glass py-3" : "bg-transparent py-4 sm:py-5"
         }`}
       >
         <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-[114px]">
           <div className="flex items-center justify-between h-11 sm:h-auto">
+            <Link href="/" className="flex items-center group shrink-0">
+              {/* LOGO IMAGE */}
+              <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl overflow-hidden transition-transform duration-300 group-hover:scale-110">
+                <Image
+                  src="/new-logo.png"
+                  alt="Realfrnd Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
 
-<Link href="/" className="flex items-center gap-3 sm:gap-4 group shrink-0">
-
-  {/* LOGO IMAGE */}
-  <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl overflow-hidden transition-transform duration-300 group-hover:scale-110">
-    <Image
-      src="/logo1.png"
-      alt="Yaari Zone Logo"
-      fill
-      className="object-contain"
-      priority
-    />
-  </div>
-
-</Link>
+              {/* TEXT (SCRIPT STYLE) */}
+              <span
+                className="text-2xl sm:text-2xl text-white"
+                style={{ fontFamily: "'Pacifico', cursive" }}
+              >
+                YaariZone
+              </span>
+            </Link>
 
             {/* DESKTOP LINKS */}
             <div className="hidden md:flex items-center gap-6 lg:gap-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="link-hover text-white/80 hover:text-white font-medium transition-colors duration-300 py-2 text-sm lg:text-base"
-                >
-                  {link.name}
-                </Link>
-              ))}
+             {navLinks.map((link) => (
+  <Link
+    key={link.name}
+    href={link.href}
+    className="relative font-medium py-2 text-sm lg:text-base group"
+    style={{ color: "rgba(255,255,255,0.8)" }}
+    onMouseEnter={e => (e.currentTarget.style.color = "#ffffff")}
+    onMouseLeave={e => (e.currentTarget.style.color = "rgba(255, 255, 255, 0.8)")}
+  >
+    {link.name}
+    {/* Underline */}
+    <span
+      className="absolute bottom-0 left-0 h-[2px] w-0 group-hover:w-full transition-all duration-300 rounded-full"
+      style={{ background: "linear-gradient(90deg, #E91E8C 0%, #1565D8 100%)" }}
+    />
+  </Link>
+))}
               <a
                 href="#download"
-                className="btn-gradient-blue px-5 lg:px-6 py-2 lg:py-2.5 text-sm whitespace-nowrap"
+                className="px-5 lg:px-6 py-2 lg:py-2.5 text-sm whitespace-nowrap text-white rounded-xl font-semibold transition-opacity hover:opacity-90"
+                style={{
+                  background:
+                    "linear-gradient(90deg, #E91E8C 0%, #1565D8 100%)",
+                  boxShadow: "0 4px 18px rgba(233,30,140,0.35)",
+                }}
               >
                 Download App
               </a>
@@ -105,25 +123,28 @@ export function Navbar() {
             <button
               onClick={toggleMobileMenu}
               className="md:hidden relative w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl bg-white/10 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/20 active:scale-95"
-              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMobileMenuOpen}
             >
               <span
                 className={`absolute transition-all duration-300 ${
-                  isMobileMenuOpen ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 rotate-90 scale-75'
+                  isMobileMenuOpen
+                    ? "opacity-100 rotate-0 scale-100"
+                    : "opacity-0 rotate-90 scale-75"
                 }`}
               >
                 <X className="w-5 h-5 text-white" />
               </span>
               <span
                 className={`absolute transition-all duration-300 ${
-                  isMobileMenuOpen ? 'opacity-0 -rotate-90 scale-75' : 'opacity-100 rotate-0 scale-100'
+                  isMobileMenuOpen
+                    ? "opacity-0 -rotate-90 scale-75"
+                    : "opacity-100 rotate-0 scale-100"
                 }`}
               >
                 <Menu className="w-5 h-5 text-white" />
               </span>
             </button>
-
           </div>
         </div>
       </nav>
@@ -134,8 +155,8 @@ export function Navbar() {
         aria-hidden="true"
         className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-40 transition-opacity duration-300 md:hidden ${
           isMobileMenuOpen
-            ? 'opacity-100 pointer-events-auto'
-            : 'opacity-0 pointer-events-none'
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
       />
 
@@ -155,21 +176,32 @@ export function Navbar() {
           flex flex-col
           transition-transform duration-300 ease-in-out
           md:hidden
-          ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}
+          ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}
         `}
       >
         {/* Drawer header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
-          <Link href="/" onClick={closeMobileMenu} className="flex items-center gap-2.5">
-             <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl overflow-hidden transition-transform duration-300 group-hover:scale-110">
-    <Image
-      src="/logo1.png"
-      alt="Yaari Zone Logo"
-      fill
-      className="object-contain"
-      priority
-    />
-  </div>
+          <Link
+            href="/"
+            onClick={closeMobileMenu}
+            className="flex items-center gap-2.5"
+          >
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl overflow-hidden transition-transform duration-300 group-hover:scale-110">
+              <Image
+                src="/new-logo.png"
+                alt="Yaari Zone Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            {/* TEXT */}
+            <span
+              className="text-2xl sm:text-2xl text-white"
+              style={{ fontFamily: "'Pacifico', cursive" }}
+            >
+              YaariZone
+            </span>
           </Link>
           <button
             onClick={closeMobileMenu}
@@ -190,10 +222,12 @@ export function Navbar() {
               className={`text-base sm:text-lg font-semibold text-white/70 hover:text-white
                 px-4 py-3 rounded-xl hover:bg-white/10
                 transition-all duration-200 active:scale-[0.98]
-                ${isMobileMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-4 opacity-0'}
+                ${isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-4 opacity-0"}
               `}
               style={{
-                transitionDelay: isMobileMenuOpen ? `${80 + index * 55}ms` : '0ms',
+                transitionDelay: isMobileMenuOpen
+                  ? `${80 + index * 55}ms`
+                  : "0ms",
               }}
             >
               {link.name}
@@ -206,7 +240,11 @@ export function Navbar() {
           <a
             href="#download"
             onClick={closeMobileMenu}
-            className="btn-gradient-blue w-full text-center py-3 text-sm sm:text-base font-semibold block rounded-xl"
+            className="w-full text-center py-3 text-sm sm:text-base font-semibold block rounded-xl text-white transition-opacity hover:opacity-90"
+            style={{
+              background: "linear-gradient(90deg, #E91E8C 0%, #1565D8 100%)",
+              boxShadow: "0 4px 18px rgba(233,30,140,0.35)",
+            }}
           >
             Download App
           </a>
@@ -214,4 +252,4 @@ export function Navbar() {
       </div>
     </>
   );
-} 
+}

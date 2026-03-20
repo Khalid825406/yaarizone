@@ -10,7 +10,7 @@ export function HeroBanner({ title }: HeroBannerProps) {
   return (
     <div
       className="
-        relative mt-16 sm:mt-20
+        relative mt-16 sm:mt-24
         h-[220px] sm:h-[260px] md:h-[320px] lg:h-[380px] xl:h-[420px]
         flex items-center justify-center text-center overflow-hidden
         bg-[#0a0f1e]
