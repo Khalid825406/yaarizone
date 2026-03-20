@@ -26,15 +26,15 @@ const footerLinks = [
   },
   {
     links: [
-      { label: 'Account Deletion', href: '#' },
+      { label: 'Account Deletion', href: '/AccountDeletion' },
       { label: 'Become a Host', href: '#' },
       { label: 'Blogs', href: '#' },
     ],
   },
   {
     links: [
-      { label: 'Coins Policy', href: '#' },
-      { label: 'Community Guidelines', href: '#' },
+      { label: 'Coins Policy', href: '/CoinsPolicy' },
+      { label: 'Community Guidelines', href: '/Community' },
     ],
   },
 ];

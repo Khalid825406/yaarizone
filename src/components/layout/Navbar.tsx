@@ -89,23 +89,30 @@ export function Navbar() {
 
             {/* DESKTOP LINKS */}
             <div className="hidden md:flex items-center gap-6 lg:gap-8">
-             {navLinks.map((link) => (
-  <Link
-    key={link.name}
-    href={link.href}
-    className="relative font-medium py-2 text-sm lg:text-base group"
-    style={{ color: "rgba(255,255,255,0.8)" }}
-    onMouseEnter={e => (e.currentTarget.style.color = "#ffffff")}
-    onMouseLeave={e => (e.currentTarget.style.color = "rgba(255, 255, 255, 0.8)")}
-  >
-    {link.name}
-    {/* Underline */}
-    <span
-      className="absolute bottom-0 left-0 h-[2px] w-0 group-hover:w-full transition-all duration-300 rounded-full"
-      style={{ background: "linear-gradient(90deg, #E91E8C 0%, #1565D8 100%)" }}
-    />
-  </Link>
-))}
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="relative font-medium py-2 text-sm lg:text-base group"
+                  style={{ color: "rgba(255,255,255,0.8)" }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "#ffffff")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "rgba(255, 255, 255, 0.8)")
+                  }
+                >
+                  {link.name}
+                  {/* Underline */}
+                  <span
+                    className="absolute bottom-0 left-0 h-[2px] w-0 group-hover:w-full transition-all duration-300 rounded-full"
+                    style={{
+                      background:
+                        "linear-gradient(90deg, #E91E8C 0%, #1565D8 100%)",
+                    }}
+                  />
+                </Link>
+              ))}
               <a
                 href="#download"
                 className="px-5 lg:px-6 py-2 lg:py-2.5 text-sm whitespace-nowrap text-white rounded-xl font-semibold transition-opacity hover:opacity-90"
