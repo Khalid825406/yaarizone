@@ -24,13 +24,13 @@ export default function Terms() {
           {/* INTRO */}
           <p className="mb-4 text-sm sm:text-base">
             These Terms of Use ("Terms") govern your access to and use of our mobile application called
-            "Real Frnd" (the "Platform") provided by Orvantis Technologies LLP. ("Your Company", "we",
+            "Yaari Zone" (the "Platform") provided by Orvantis Technologies LLP. ("Your Company", "we",
             "us" and "our"), a private company registered under Indian law with its registered office in
             Noida, India. The terms "you" and "your" refer to the user/host of the Platform.
           </p>
 
           <p className="mb-4 text-sm sm:text-base">
-            These Terms should be read alongside the Real Frnd Content and Community Guidelines and the
+            These Terms should be read alongside the Yaari Zone Content and Community Guidelines and the
             Privacy Policy. By accessing or using our Platform, you confirm that you have read,
             understood, and agreed to these Terms. If you do not accept the terms and conditions, please
             do not use this Platform.
@@ -75,7 +75,7 @@ export default function Terms() {
           <Section title="WHO IS ELIGIBLE TO USE OUR SERVICES" />
 
           <p className="mb-4 text-sm sm:text-base">
-            Real Frnd is a platform crafted to facilitate connections with new individuals, fostering
+            Yaari Zone is a platform crafted to facilitate connections with new individuals, fostering
             the development of friendships through audio and video interactions. Our primary service
             aims to enable users to find new friends and participate in one-on-one conversations based
             on common interests, geographical location, or other personalised preferences
@@ -95,7 +95,7 @@ export default function Terms() {
           <Section title="HOW TO USE OUR SERVICES" />
 
           <p className="mb-4 text-sm sm:text-base">
-            Real Frnd offers a unique and user-friendly platform for forming new friendships. To provide
+            Yaari Zone offers a unique and user-friendly platform for forming new friendships. To provide
             a personalised experience, we may allow you to set preferences related to your interests,
             language, and other characteristics. Access to our Services requires registration on our
             platform, which can be completed by entering your phone number and the OTP sent to your
@@ -103,7 +103,7 @@ export default function Terms() {
           </p>
 
           <p className="mb-3 text-sm sm:text-base">
-            When you register with us using the Real Frnd mobile application, you permit us to access
+            When you register with us using the Yaari Zone mobile application, you permit us to access
             certain features of your mobile device, including but not limited to:
           </p>
 
@@ -139,7 +139,7 @@ export default function Terms() {
           </p>
 
           <p className="mb-4 text-sm sm:text-base">
-            The Real Frnd Privacy Policy offers a comprehensive explanation of the methods by which we
+            The Yaari Zone Privacy Policy offers a comprehensive explanation of the methods by which we
             collect, utilise, share, and store the information provided by you. It also delineates your
             legal rights and the procedures for exercising control over the data you supply to us. We
             recommend that you review the Privacy Policy thoroughly.
@@ -158,7 +158,7 @@ export default function Terms() {
           <p className="mb-5 text-sm sm:text-base">
             Creating a safe, respectful, and secure environment for our diverse community requires a
             collective effort. Please note that you will be entirely responsible for the costs and
-            consequences of any actions you take on the Real Frnd Platform, including any breach of
+            consequences of any actions you take on the Yaari Zone Platform, including any breach of
             these Terms.
           </p>
 
@@ -176,7 +176,7 @@ export default function Terms() {
               While you are not required to use your legal name on our platform, you must provide your
               correct phone number and gender. You must not falsely represent yourself as another person
               or impersonate someone else. If you are managing a parody account, you must clearly state
-              this in your Real Frnd bio. Any form of fraudulent or deceptive conduct is strictly
+              this in your Yaari Zone bio. Any form of fraudulent or deceptive conduct is strictly
               forbidden.
             </Commitment>
 
@@ -190,7 +190,7 @@ export default function Terms() {
             </Commitment>
 
             <Commitment letter="d" title="Account Termination and Content Removal">
-              Your use of our Platform is governed by the Real Frnd Content and Community Guidelines.
+              Your use of our Platform is governed by the Yaari Zone Content and Community Guidelines.
               If multiple valid reports are received regarding persistent violations, or if the violation
               is severe, we may temporarily suspend or permanently terminate your account. If you
               believe your content was removed in error or that your account was unjustly terminated,
@@ -210,7 +210,7 @@ export default function Terms() {
               content you disseminate on our Platform.
             </Commitment>
 
-            <Commitment letter="f" title="No Attempt to Disrupt or Jeopardise Real Frnd Services">
+            <Commitment letter="f" title="No Attempt to Disrupt or Jeopardise Yaari Zone Services">
               You agree not to interfere with or access non-public sections of our Platform or technical
               systems. You shall not introduce Trojan horses, viruses, worms, or any other malicious
               software, nor use bots, scripts, or automated tools to extract user information. Any
@@ -235,7 +235,7 @@ export default function Terms() {
 
           <p className="mb-8 text-sm sm:text-base">
             As a platform, we are committed to strictly adhering to the law. Publishers of relevant news
-            and current affairs utilising our platform must furnish details of their Real Frnd user
+            and current affairs utilising our platform must furnish details of their Yaari Zone user
             accounts to the Ministry of Information and Broadcasting in accordance with applicable
             regulations. By engaging with our platform, you agree to comply with all pertinent legal
             requirements.
@@ -247,7 +247,7 @@ export default function Terms() {
           <div className="space-y-5 mb-8 text-sm sm:text-base">
             <Commitment letter="a" title="Automatic Updates and Downloads">
               We are continually working to enhance our Platform and Services. To ensure you have the
-              best and most secure user experience, you may need to periodically update the Real Frnd
+              best and most secure user experience, you may need to periodically update the Yaari Zone
               mobile application. You give us permission to automatically download and install updates
               to the app without any further action from you. If you do not install the latest version,
               you might not be able to access all our Services.
@@ -287,7 +287,7 @@ export default function Terms() {
 
           <p className="mb-4 text-sm sm:text-base">
             As part of our commitment to users' safety and privacy, we have established a strong
-            Grievance Redressal Mechanism to handle any concerns or complaints about your Real Frnd
+            Grievance Redressal Mechanism to handle any concerns or complaints about your Yaari Zone
             experience. We are committed to resolving issues raised by you within{" "}
             <strong>7 (seven) days</strong> from the date of receiving the complete complaint.
           </p>
@@ -326,9 +326,9 @@ export default function Terms() {
             Contacting the Grievance Officer — for concerns regarding:
           </p>
           <ul className="list-disc pl-5 sm:pl-6 mb-5 space-y-1 text-sm sm:text-base text-gray-700">
-            <li>Real Frnd Terms of Service</li>
-            <li>Real Frnd Privacy Policy</li>
-            <li>Real Frnd Content &amp; Community Guidelines</li>
+            <li>Yaari Zone Terms of Service</li>
+            <li>Yaari Zone Privacy Policy</li>
+            <li>Yaari Zone Content &amp; Community Guidelines</li>
             <li>Questions about your account</li>
             <li>Any other legal or regulatory concerns</li>
           </ul>

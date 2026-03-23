@@ -32,16 +32,16 @@ export default function Privacy() {
 
           {/* INTRO */}
           <p className="mb-5 leading-relaxed text-sm sm:text-base">
-            We, <strong>Real Frnd</strong>, recognise that your privacy is of paramount importance and
+            We, <strong>Yaari Zone</strong>, recognise that your privacy is of paramount importance and
             we are deeply committed to protecting it. This Privacy Policy ("Policy") outlines our
             practices for collecting, using, and disclosing your data when you use our mobile application
-            called "Real Frnd" (the "Platform" or "Application"). References to "we", "our", or "us"
-            shall mean the Platform and/or Real Frnd. Any references to "you" or "your" shall mean any
+            called "Yaari Zone" (the "Platform" or "Application"). References to "we", "our", or "us"
+            shall mean the Platform and/or Yaari Zone. Any references to "you" or "your" shall mean any
             person or entity using our Platform, i.e., the Hosts and Users.
           </p>
 
           <p className="mb-8 leading-relaxed text-sm sm:text-base">
-            This Policy is a paramount aspect of, and should be read in conjunction with, the Real Frnd
+            This Policy is a paramount aspect of, and should be read in conjunction with, the Yaari Zone
             Terms of Use and the Content and Community Guidelines. By using this Platform, you expressly
             agree to the terms and conditions of this Policy. You also agree to our use and sharing of
             your Personal Information (as defined below) as described in this Policy. The capitalised
@@ -249,7 +249,7 @@ export default function Privacy() {
             4. User Consent
           </h2>
           <p className="mb-8 text-sm sm:text-base leading-relaxed text-gray-700">
-            In situations in which Real Frnd offers you the option to subscribe to any
+            In situations in which Yaari Zone offers you the option to subscribe to any
             Email / RCS / Voice / SMS / WhatsApp service that will keep you updated with news or
             information that it considers may be of interest to you, your use of the content received
             from these services will be subject to these Terms and Conditions.
@@ -260,7 +260,7 @@ export default function Privacy() {
             5. Grievance Officer
           </h2>
           <p className="mb-4 text-sm sm:text-base leading-relaxed text-gray-700">
-            Real Frnd has a dedicated Grievance Officer to address your concerns regarding data safety,
+            Yaari Zone has a dedicated Grievance Officer to address your concerns regarding data safety,
             privacy, and Platform usage. We will resolve the issues you have raised within{" "}
             <strong>7 (seven) days</strong> of receiving them.
           </p>
