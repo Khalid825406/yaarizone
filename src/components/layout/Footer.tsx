@@ -59,7 +59,7 @@ export function Footer() {
 
           {/* Mail card — pink → blue gradient (logo colors) */}
           <a
-            href="mailto:support@yaarizone.com"
+            href="mailto:deepakshakya9766@gmail.com"
             className="px-5 py-3.5 sm:px-6 sm:py-4
               rounded-2xl flex items-center gap-3 sm:gap-4
               w-full sm:w-auto
@@ -76,7 +76,7 @@ export function Footer() {
             <div className="min-w-0">
               <p className="text-xs sm:text-sm text-white/70">Mail Us:</p>
               <p className="font-semibold text-white text-sm sm:text-base truncate">
-                support@yaarizone.com
+                deepakshakya9766@gmail.com
               </p>
             </div>
           </a>
@@ -98,7 +98,7 @@ export function Footer() {
               YaariZone
             </span>
             <p className="text-white/50 text-xs sm:text-sm mb-5 max-w-xs leading-relaxed mt-[15px]">
-              Connecting real people through real conversations.
+              Chilsari, Kaimganj, Farrukhabad, Uttar Pradesh - 209502
             </p>
 
             {/* Social icons — pink glow on hover */}

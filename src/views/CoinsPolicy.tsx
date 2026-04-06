@@ -196,12 +196,12 @@ export default function CoinsPolicy() {
                     available <strong>Monday to Friday, 10:00 AM – 6:00 PM</strong>.
                   </p>
                   <a
-                    href="mailto:support@yaarizone.com"
+                    href="mailto:deepakshakya9766@gmail.com"
                     className="inline-flex items-center justify-center gap-2 text-white text-sm sm:text-base font-semibold px-6 py-2.5 rounded-xl transition-opacity hover:opacity-90 active:scale-[0.98] whitespace-nowrap shrink-0"
                     style={{ background: GRADIENT }}
                   >
                     <Mail className="w-4 h-4" />
-                    support@yaarizone.com
+                    deepakshakya9766@gmail.com
                   </a>
                 </div>
               </Card>

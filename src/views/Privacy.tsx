@@ -11,8 +11,6 @@ interface HeroBannerProps {
   title: string;
 }
 
-
-
 // ── PRIVACY PAGE ─────────────────────────────────────────────────
 export default function Privacy() {
   return (
@@ -32,12 +30,13 @@ export default function Privacy() {
 
           {/* INTRO */}
           <p className="mb-5 leading-relaxed text-sm sm:text-base">
-            We, <strong>Yaari Zone</strong>, recognise that your privacy is of paramount importance and
+            We, <strong>Shakya Technology</strong>, operating the mobile application{" "}
+            <strong>Yaari Zone</strong>, recognise that your privacy is of paramount importance and
             we are deeply committed to protecting it. This Privacy Policy ("Policy") outlines our
             practices for collecting, using, and disclosing your data when you use our mobile application
             called "Yaari Zone" (the "Platform" or "Application"). References to "we", "our", or "us"
-            shall mean the Platform and/or Yaari Zone. Any references to "you" or "your" shall mean any
-            person or entity using our Platform, i.e., the Hosts and Users.
+            shall mean Shakya Technology and/or the Platform. Any references to "you" or "your" shall
+            mean any person or entity using our Platform, i.e., the Hosts and Users.
           </p>
 
           <p className="mb-8 leading-relaxed text-sm sm:text-base">
@@ -184,10 +183,11 @@ export default function Privacy() {
                   address issues related to fraud, security, or technical concerns.
                 </li>
                 <li>
-                  <strong>In the event of a business transfer:</strong> If our Company or substantially
-                  all of its assets are acquired by a third party, your personal data will be regarded as
-                  one of the transferred assets. Should we engage in a merger, acquisition, or sale of
-                  assets, we will notify you in advance to enable you to opt out by deleting your account.
+                  <strong>In the event of a business transfer:</strong> If Shakya Technology or
+                  substantially all of its assets are acquired by a third party, your personal data will
+                  be regarded as one of the transferred assets. Should we engage in a merger, acquisition,
+                  or sale of assets, we will notify you in advance to enable you to opt out by deleting
+                  your account.
                 </li>
               </ul>
             </div>
@@ -260,19 +260,20 @@ export default function Privacy() {
             5. Grievance Officer
           </h2>
           <p className="mb-4 text-sm sm:text-base leading-relaxed text-gray-700">
-            Yaari Zone has a dedicated Grievance Officer to address your concerns regarding data safety,
-            privacy, and Platform usage. We will resolve the issues you have raised within{" "}
+            Shakya Technology has a dedicated Grievance Officer to address your concerns regarding data
+            safety, privacy, and Platform usage. We will resolve the issues you have raised within{" "}
             <strong>7 (seven) days</strong> of receiving them.
           </p>
 
           <div className="bg-gray-50 border rounded-xl p-4 sm:p-6 space-y-2 text-sm sm:text-base">
             <p className="font-semibold text-gray-800 mb-3">Grievance Officer Details:</p>
-            <p><strong>Name:</strong> Deepak Shakhya</p>
-            <p><strong>Address:</strong> New Delhi</p>
+            <p><strong>Name:</strong> Deepak Shakya</p>
+            <p><strong>Company:</strong> Shakya Technology</p>
+            <p><strong>Address:</strong> Chilsari, Kaimganj, Farrukhabad, Uttar Pradesh - 209502</p>
             <p>
               <strong>Email:</strong>{" "}
-              <a href="mailto:support@yaarizone.com" className="text-blue-600 hover:underline">
-                support@yaarizone.com
+              <a href="mailto:deepakshakya9766@gmail.com" className="text-blue-600 hover:underline">
+                deepakshakya9766@gmail.com
               </a>
             </p>
             <p><strong>Office Hours:</strong> 10:00 A.M. to 6:00 P.M. (Mon to Fri)</p>

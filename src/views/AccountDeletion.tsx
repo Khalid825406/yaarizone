@@ -160,11 +160,11 @@ export default function AccountDeletion() {
                 <strong>Monday to Friday, 10:00 AM – 6:00 PM</strong>.
               </p>
               <a
-                href="mailto:support@yaarizone.com"
+                href="mailto:deepakshakya9766@gmail.com"
                 className="inline-flex items-center justify-center w-full text-white text-sm sm:text-base font-semibold py-2.5 rounded-xl transition-opacity hover:opacity-90 active:scale-[0.98]"
                 style={{ background: "linear-gradient(135deg, #e91e8c, #2563eb)" }}
               >
-                support@yaarizone.com
+                deepakshakya9766@gmail.com
               </a>
             </Card>
 

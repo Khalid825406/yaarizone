@@ -365,20 +365,20 @@ export default function CommunityGuidelines() {
               <Card icon={<Mail className="w-5 h-5" />} title="c. Grievance Officer">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div className="space-y-1.5 text-sm sm:text-base text-gray-700">
-                    <p><strong>Name:</strong> Amit Sharma</p>
-                    <p><strong>Address:</strong> D 219, 1st Floor, Sector 63, Noida 201301</p>
+                    <p><strong>Name:</strong> Deepak Shakya</p>
+                    <p><strong>Address:</strong>Chilsari, Kaimganj, Farrukhabad, Uttar Pradesh - 209502</p>
                     <p><strong>Office Hours:</strong> 10:00 A.M. to 6:00 P.M. (Mon to Fri)</p>
                     <p className="text-xs sm:text-sm text-gray-500 pt-1">
                       Please send all user-related grievances to the email address provided.
                     </p>
                   </div>
                   <a
-                    href="mailto:support@yaarizone.com"
+                    href="mailto:deepakshakya9766@gmail.com"
                     className="inline-flex items-center justify-center gap-2 text-white text-sm sm:text-base font-semibold px-6 py-2.5 rounded-xl transition-opacity hover:opacity-90 active:scale-[0.98] whitespace-nowrap shrink-0"
                     style={{ background: GRADIENT }}
                   >
                     <Mail className="w-4 h-4" />
-                    support@yaarizone.com
+                    deepakshakya9766@gmail.com
                   </a>
                 </div>
               </Card>
@@ -393,8 +393,8 @@ export default function CommunityGuidelines() {
                   If your content is removed from our Platform, we will notify you and explain our
                   reasons. If you believe your content has been unfairly taken down, you can submit an
                   in-app appeal or contact us at{" "}
-                  <a href="mailto:support@yaarizone.com" className="text-blue-600 hover:underline font-medium">
-                    support@yaarizone.com
+                  <a href="mailto:deepakshakya9766@gmail.com" className="text-blue-600 hover:underline font-medium">
+                    deepakshakya9766@gmail.com
                   </a>{" "}
                   to contest the removal. We will review the content again and decide whether the appeal
                   is valid.

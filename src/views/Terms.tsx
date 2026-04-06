@@ -24,9 +24,10 @@ export default function Terms() {
           {/* INTRO */}
           <p className="mb-4 text-sm sm:text-base">
             These Terms of Use ("Terms") govern your access to and use of our mobile application called
-            "Yaari Zone" (the "Platform") provided by Orvantis Technologies LLP. ("Your Company", "we",
-            "us" and "our"), a private company registered under Indian law with its registered office in
-            Noida, India. The terms "you" and "your" refer to the user/host of the Platform.
+            "Yaari Zone" (the "Platform") provided by Shakya Technology ("Your Company", "we",
+            "us" and "our"), a private company registered under Indian law with its registered office at
+            Chilsari, Kaimganj, Farrukhabad, Uttar Pradesh - 209502, India. The terms "you" and "your"
+            refer to the user/host of the Platform.
           </p>
 
           <p className="mb-4 text-sm sm:text-base">
@@ -195,8 +196,8 @@ export default function Terms() {
               is severe, we may temporarily suspend or permanently terminate your account. If you
               believe your content was removed in error or that your account was unjustly terminated,
               you may appeal by contacting us at{" "}
-              <a href="mailto:support@yaarizone.com" className="text-blue-600 hover:underline">
-                support@yaarizone.com
+              <a href="mailto:deepakshakya9766@gmail.com" className="text-blue-600 hover:underline">
+                deepakshakya9766@gmail.com
               </a>.
             </Commitment>
 
@@ -315,8 +316,8 @@ export default function Terms() {
             <li>
               <strong>Email Support:</strong> For general concerns or complaints, please send an email
               with subsequent proofs to{" "}
-              <a href="mailto:support@yaarizone.com" className="text-blue-600 hover:underline">
-                support@yaarizone.com
+              <a href="mailto:deepakshakya9766@gmail.com" className="text-blue-600 hover:underline">
+                deepakshakya9766@gmail.com
               </a>. You will receive an auto-generated ticket number to track the status of your
               complaint.
             </li>
@@ -335,12 +336,14 @@ export default function Terms() {
 
           <div className="bg-gray-50 border rounded-xl p-4 sm:p-6 space-y-2 text-sm sm:text-base mb-8">
             <p className="font-semibold text-gray-800 mb-3">Grievance Officer Details:</p>
-            <p><strong>Name:</strong> Deepak Shakhya</p>
-            <p><strong>Address:</strong> New Delhi</p>
+            <p><strong>Name:</strong> Deepak Shakya</p>
+            <p><strong>Company:</strong> Shakya Technology</p>
+           
+            <p><strong>Address:</strong> Chilsari, Kaimganj, Farrukhabad, Uttar Pradesh - 209502</p>
             <p>
               <strong>Email:</strong>{" "}
-              <a href="mailto:support@yaarizone.com" className="text-blue-600 hover:underline">
-                support@yaarizone.com
+              <a href="mailto:deepakshakya9766@gmail.com" className="text-blue-600 hover:underline">
+                deepakshakya9766@gmail.com
               </a>
             </p>
             <p><strong>Office Hours:</strong> 10:00 A.M. to 6:00 P.M. (Mon to Fri)</p>
