@@ -19,7 +19,7 @@ const socialLinks = [
 const footerLinks = [
   {
     links: [
-      { label: 'About Us', href: '#about' },
+      { label: 'About Us', href: '/aboutus' },
       { label: 'Terms & Conditions', href: '/terms' },
       { label: 'Privacy Policy', href: '/privacy' },
     ],
