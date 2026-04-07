@@ -110,7 +110,7 @@ export default function CoinsPolicy() {
             {/* 2 — USING COINS */}
             <Card icon={<Coins className="w-5 h-5" />} title="2. Using Coins">
               <ul className="space-y-3">
-                <Bullet text="Coins can be utilised to participate in audio/video calls with hosts." />
+                <Bullet text="Coins can be utilised to participate in audio calls with hosts." />
                 <Bullet text="The ways Coins can be used are subject to change at any time." />
                 <Bullet text="We reserve the right to add, remove, or modify features that require Coins without prior notice." />
               </ul>

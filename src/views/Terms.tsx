@@ -77,7 +77,7 @@ export default function Terms() {
 
           <p className="mb-4 text-sm sm:text-base">
             Yaari Zone is a platform crafted to facilitate connections with new individuals, fostering
-            the development of friendships through audio and video interactions. Our primary service
+            the development of friendships through audio interactions. Our primary service
             aims to enable users to find new friends and participate in one-on-one conversations based
             on common interests, geographical location, or other personalised preferences
             ("Service/Services").
@@ -109,11 +109,7 @@ export default function Terms() {
           </p>
 
           <ul className="list-disc pl-5 sm:pl-6 mb-4 space-y-2 text-sm sm:text-base text-gray-700">
-            <li>
-              <strong>Gallery and Camera:</strong> This access is necessary to enable you to upload
-              profile pictures, participate in video calls, and capture new content directly within
-              the app.
-            </li>
+        
             <li>
               <strong>Device Storage:</strong> This permission is required for storing temporary data,
               cache files, and content you may choose to download or save from the platform.

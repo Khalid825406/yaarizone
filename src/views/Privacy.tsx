@@ -22,7 +22,6 @@ export default function Privacy() {
       {/* MAIN CONTENT */}
       <div className="max-w-[84rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 ">
         <div className="bg-white text-black rounded-2xl shadow-lg p-5 sm:p-8 md:p-10 border">
-
           {/* LAST UPDATED */}
           <p className="mb-6 font-medium text-sm sm:text-base">
             <strong>Last Updated:</strong> 17 Sep, 2025
@@ -30,24 +29,29 @@ export default function Privacy() {
 
           {/* INTRO */}
           <p className="mb-5 leading-relaxed text-sm sm:text-base">
-            We, <strong>Shakya Technology</strong>, operating the mobile application{" "}
-            <strong>Yaari Zone</strong>, recognise that your privacy is of paramount importance and
-            we are deeply committed to protecting it. This Privacy Policy ("Policy") outlines our
-            practices for collecting, using, and disclosing your data when you use our mobile application
-            called "Yaari Zone" (the "Platform" or "Application"). References to "we", "our", or "us"
-            shall mean Shakya Technology and/or the Platform. Any references to "you" or "your" shall
-            mean any person or entity using our Platform, i.e., the Hosts and Users.
+            We, <strong>Shakya Technology</strong>, operating the mobile
+            application <strong>Yaari Zone</strong>, recognise that your privacy
+            is of paramount importance and we are deeply committed to protecting
+            it. This Privacy Policy ("Policy") outlines our practices for
+            collecting, using, and disclosing your data when you use our mobile
+            application called "Yaari Zone" (the "Platform" or "Application").
+            References to "we", "our", or "us" shall mean Shakya Technology
+            and/or the Platform. Any references to "you" or "your" shall mean
+            any person or entity using our Platform, i.e., the Hosts and Users.
           </p>
 
           <p className="mb-8 leading-relaxed text-sm sm:text-base">
-            This Policy is a paramount aspect of, and should be read in conjunction with, the Yaari Zone
-            Terms of Use and the Content and Community Guidelines. By using this Platform, you expressly
-            agree to the terms and conditions of this Policy. You also agree to our use and sharing of
-            your Personal Information (as defined below) as described in this Policy. The capitalised
-            words used in this Policy but not defined here shall have the meanings given to them in the
-            Terms. If you do not agree with the terms and conditions of this Policy, we would request
-            that you abstain from using this Platform. We will not use or share your information with
-            anyone except as outlined in this Policy.
+            This Policy is a paramount aspect of, and should be read in
+            conjunction with, the Yaari Zone Terms of Use and the Content and
+            Community Guidelines. By using this Platform, you expressly agree to
+            the terms and conditions of this Policy. You also agree to our use
+            and sharing of your Personal Information (as defined below) as
+            described in this Policy. The capitalised words used in this Policy
+            but not defined here shall have the meanings given to them in the
+            Terms. If you do not agree with the terms and conditions of this
+            Policy, we would request that you abstain from using this Platform.
+            We will not use or share your information with anyone except as
+            outlined in this Policy.
           </p>
 
           {/* ── SECTION 1 ── */}
@@ -55,8 +59,9 @@ export default function Privacy() {
             1. Information We Collect and How We Use It
           </h2>
           <p className="mb-5 text-sm sm:text-base leading-relaxed">
-            To provide and improve our Services, we collect several types of information. This is
-            categorised below, along with an explanation of how it is used.
+            To provide and improve our Services, we collect several types of
+            information. This is categorised below, along with an explanation of
+            how it is used.
           </p>
 
           {/* TABLE */}
@@ -64,8 +69,12 @@ export default function Privacy() {
             <table className="w-full min-w-[520px] text-sm">
               <thead>
                 <tr className="bg-gray-100 text-left">
-                  <th className="p-3 sm:p-4 border-r font-semibold w-1/2">Information We Collect</th>
-                  <th className="p-3 sm:p-4 font-semibold w-1/2">How We Use It</th>
+                  <th className="p-3 sm:p-4 border-r font-semibold w-1/2">
+                    Information We Collect
+                  </th>
+                  <th className="p-3 sm:p-4 font-semibold w-1/2">
+                    How We Use It
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -93,12 +102,12 @@ export default function Privacy() {
                   ]}
                 />
                 <Row
-                  left={`Communications and Support Data\nContent of voice/video calls between users (stored on device). Any information provided to our customer support team.`}
+                  left={`Communications and Support Data\nContent of voice (audio) calls between users (stored on device). Any information shared with our customer support team.`}
                   right={[
-                    "To facilitate the delivery of communication to another user.",
-                    "We do not monitor your audio/video data, take action based on it, or disclose it to any third party.",
-                    "To investigate and resolve your support issues efficiently.",
-                    "To improve our customer service and support systems.",
+                    "To enable secure and reliable audio (voice) communication between users.",
+                    "We do not access, monitor, or share your audio call data with any third party.",
+                    "To investigate and resolve user-reported issues effectively.",
+                    "To enhance our support services and overall user experience.",
                   ]}
                 />
                 <Row
@@ -110,13 +119,13 @@ export default function Privacy() {
                   ]}
                 />
                 <Row
-                  left={`Device Data\nDevice attributes (OS, battery, storage), operations, identifiers, Bluetooth/Wi-Fi signals, GPS location, camera access, network info, app list, and media access.`}
+                  left={`Device Data\nDevice attributes (OS, battery, storage), operations, identifiers, Bluetooth/Wi-Fi signals, GPS location, microphone access, network info, and app usage data.`}
                   right={[
-                    "To facilitate the sharing of media like videos and images.",
+                    "To facilitate audio communication (voice calls) on the Platform.",
                     "To customise our Platform to suit your mobile device.",
                     "To optimise your user experience and improve the Platform's performance.",
                     "To verify your identity and enforce our policies.",
-                    "To facilitate content sharing via other applications on your device.",
+                    "To enable seamless audio sharing and communication features.",
                   ]}
                 />
                 <Row
@@ -135,65 +144,80 @@ export default function Privacy() {
             Disclosure of Your Information
           </h2>
           <p className="mb-4 text-sm sm:text-base leading-relaxed">
-            We may share your information in the following ways, ensuring that we do so in a manner
-            that respects your privacy.
+            We may share your information in the following ways, ensuring that
+            we do so in a manner that respects your privacy.
           </p>
 
           <div className="space-y-5 mb-8 text-sm sm:text-base leading-relaxed">
             <div>
-              <p className="font-semibold mb-1">a. Public Content and User-to-User Sharing</p>
+              <p className="font-semibold mb-1">
+                a. Public Content and User-to-User Sharing
+              </p>
               <p className="text-gray-700">
-                Any content on your public profile or another user's profile, such as a bio, is
-                accessible to everyone, including search engines. When you submit or share content you
-                choose to make public, it may be re-shared by others. You should think carefully about
-                who you share with, as people who can see your activity on our Platform can choose to
-                re-share it with others both on and off the platform.
+                Any content on your public profile or another user's profile,
+                such as a bio, is accessible to everyone, including search
+                engines. When you submit or share content you choose to make
+                public, it may be re-shared by others. You should think
+                carefully about who you share with, as people who can see your
+                activity on our Platform can choose to re-share it with others
+                both on and off the platform.
               </p>
             </div>
             <div>
-              <p className="font-semibold mb-1">b. Sharing with Our Group of Companies</p>
+              <p className="font-semibold mb-1">
+                b. Sharing with Our Group of Companies
+              </p>
               <p className="text-gray-700">
-                We may share your Personal Information with any member of our Group — any entity
-                controlled by us, or in control of us, or under common control with us, whether directly
-                or indirectly. We do this to provide consistent services across our products and for the
-                purposes outlined in this Policy.
+                We may share your Personal Information with any member of our
+                Group — any entity controlled by us, or in control of us, or
+                under common control with us, whether directly or indirectly. We
+                do this to provide consistent services across our products and
+                for the purposes outlined in this Policy.
               </p>
             </div>
             <div>
-              <p className="font-semibold mb-2">c. Sharing with Service Providers and Business Partners</p>
+              <p className="font-semibold mb-2">
+                c. Sharing with Service Providers and Business Partners
+              </p>
               <p className="text-gray-700 mb-3">
-                We may share your information (including Personal Information) with select third parties,
-                including:
+                We may share your information (including Personal Information)
+                with select third parties, including:
               </p>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 <li>
-                  <strong>Business partners and Affiliates</strong> may use this information to
-                  facilitate, comprehend, and enhance the Service as well as their own offerings.
+                  <strong>Business partners and Affiliates</strong> may use this
+                  information to facilitate, comprehend, and enhance the Service
+                  as well as their own offerings.
                 </li>
                 <li>
-                  <strong>Advertisers and advertising networks</strong> use this data to select and
-                  deliver relevant advertisements to you and other users. We do not disclose identifiable
-                  personal information to our advertisers; however, we may provide them with aggregate
-                  and anonymised data regarding our users.
+                  <strong>Advertisers and advertising networks</strong> use this
+                  data to select and deliver relevant advertisements to you and
+                  other users. We do not disclose identifiable personal
+                  information to our advertisers; however, we may provide them
+                  with aggregate and anonymised data regarding our users.
                 </li>
                 <li>
-                  <strong>Government bodies or law enforcement agencies</strong> may request your data
-                  if we have a good-faith belief that such sharing is reasonably necessary to comply with
-                  legal obligations, protect our rights, property, or safety, or to detect, prevent, or
-                  address issues related to fraud, security, or technical concerns.
+                  <strong>Government bodies or law enforcement agencies</strong>{" "}
+                  may request your data if we have a good-faith belief that such
+                  sharing is reasonably necessary to comply with legal
+                  obligations, protect our rights, property, or safety, or to
+                  detect, prevent, or address issues related to fraud, security,
+                  or technical concerns.
                 </li>
                 <li>
-                  <strong>In the event of a business transfer:</strong> If Shakya Technology or
-                  substantially all of its assets are acquired by a third party, your personal data will
-                  be regarded as one of the transferred assets. Should we engage in a merger, acquisition,
-                  or sale of assets, we will notify you in advance to enable you to opt out by deleting
-                  your account.
+                  <strong>In the event of a business transfer:</strong> If
+                  Shakya Technology or substantially all of its assets are
+                  acquired by a third party, your personal data will be regarded
+                  as one of the transferred assets. Should we engage in a
+                  merger, acquisition, or sale of assets, we will notify you in
+                  advance to enable you to opt out by deleting your account.
                 </li>
               </ul>
             </div>
             <p className="text-gray-700">
-              We shall never rent or sell your Personal Information to third parties for their
-              independent use, except on an anonymised basis, unless expressly stipulated in these Terms.
+              We shall never rent or sell your Personal Information to third
+              parties for their independent use, except on an anonymised basis,
+              unless expressly stipulated in these Terms.
             </p>
           </div>
 
@@ -202,29 +226,36 @@ export default function Privacy() {
             2. Data Security and Storage
           </h2>
           <p className="mb-4 text-sm sm:text-base leading-relaxed">
-            We are dedicated to safeguarding your Personal Information. We have implemented suitable
-            technical and security measures to protect the data we collect and process.
+            We are dedicated to safeguarding your Personal Information. We have
+            implemented suitable technical and security measures to protect the
+            data we collect and process.
           </p>
 
           <div className="space-y-5 mb-8 text-sm sm:text-base leading-relaxed">
             <div>
-              <p className="font-semibold mb-1">a. Where We Store Your Personal Information</p>
+              <p className="font-semibold mb-1">
+                a. Where We Store Your Personal Information
+              </p>
               <p className="text-gray-700">
-                We store your data on the Amazon Web Services (AWS) cloud platform. These servers are
-                located in India and abroad. AWS implements robust security measures to protect your
-                information. You are responsible for maintaining the confidentiality of your account and
-                not sharing the access with anyone.
+                We store your data on the Amazon Web Services (AWS) cloud
+                platform. These servers are located in India and abroad. AWS
+                implements robust security measures to protect your information.
+                You are responsible for maintaining the confidentiality of your
+                account and not sharing the access with anyone.
               </p>
             </div>
             <div>
               <p className="font-semibold mb-1">b. Your Rights</p>
               <p className="text-gray-700 mb-2">
-                You retain the right to modify, update, or delete Personal Information associated with
-                your account at any time by accessing your profile page after logging in. You may also
-                opt out of receiving unwanted communications by following the instructions provided within
-                the respective message. You also have the right to withdraw your consent for the ongoing
-                collection of your information. Please be advised that revoking your consent may
-                adversely impact your ability to use the Platform.
+                You retain the right to modify, update, or delete Personal
+                Information associated with your account at any time by
+                accessing your profile page after logging in. You may also opt
+                out of receiving unwanted communications by following the
+                instructions provided within the respective message. You also
+                have the right to withdraw your consent for the ongoing
+                collection of your information. Please be advised that revoking
+                your consent may adversely impact your ability to use the
+                Platform.
               </p>
               <p className="text-gray-700">
                 To delete your account from the Platform, please use the{" "}
@@ -238,21 +269,21 @@ export default function Privacy() {
             3. Third-Party Links
           </h2>
           <p className="mb-8 text-sm sm:text-base leading-relaxed text-gray-700">
-            Our Platform may contain links to and from the websites of our partners, advertisers, and
-            other third parties. These websites have their own privacy policies, and we do not accept
-            any responsibility or liability for them. Please check their policies before submitting any
-            personal data.
+            Our Platform may contain links to and from the websites of our
+            partners, advertisers, and other third parties. These websites have
+            their own privacy policies, and we do not accept any responsibility
+            or liability for them. Please check their policies before submitting
+            any personal data.
           </p>
 
           {/* ── SECTION 4 ── */}
-          <h2 className="text-lg sm:text-xl font-bold mb-3">
-            4. User Consent
-          </h2>
+          <h2 className="text-lg sm:text-xl font-bold mb-3">4. User Consent</h2>
           <p className="mb-8 text-sm sm:text-base leading-relaxed text-gray-700">
-            In situations in which Yaari Zone offers you the option to subscribe to any
-            Email / RCS / Voice / SMS / WhatsApp service that will keep you updated with news or
-            information that it considers may be of interest to you, your use of the content received
-            from these services will be subject to these Terms and Conditions.
+            In situations in which Yaari Zone offers you the option to subscribe
+            to any Email / RCS / Voice / SMS / WhatsApp service that will keep
+            you updated with news or information that it considers may be of
+            interest to you, your use of the content received from these
+            services will be subject to these Terms and Conditions.
           </p>
 
           {/* ── SECTION 5 ── */}
@@ -260,29 +291,44 @@ export default function Privacy() {
             5. Grievance Officer
           </h2>
           <p className="mb-4 text-sm sm:text-base leading-relaxed text-gray-700">
-            Shakya Technology has a dedicated Grievance Officer to address your concerns regarding data
-            safety, privacy, and Platform usage. We will resolve the issues you have raised within{" "}
+            Shakya Technology has a dedicated Grievance Officer to address your
+            concerns regarding data safety, privacy, and Platform usage. We will
+            resolve the issues you have raised within{" "}
             <strong>7 (seven) days</strong> of receiving them.
           </p>
 
           <div className="bg-gray-50 border rounded-xl p-4 sm:p-6 space-y-2 text-sm sm:text-base">
-            <p className="font-semibold text-gray-800 mb-3">Grievance Officer Details:</p>
-            <p><strong>Name:</strong> Deepak Shakya</p>
-            <p><strong>Company:</strong> Shakya Technology</p>
-            <p><strong>Address:</strong> Chilsari, Kaimganj, Farrukhabad, Uttar Pradesh - 209502</p>
+            <p className="font-semibold text-gray-800 mb-3">
+              Grievance Officer Details:
+            </p>
+            <p>
+              <strong>Name:</strong> Deepak Shakya
+            </p>
+            <p>
+              <strong>Company:</strong> Shakya Technology
+            </p>
+            <p>
+              <strong>Address:</strong> Chilsari, Kaimganj, Farrukhabad, Uttar
+              Pradesh - 209502
+            </p>
             <p>
               <strong>Email:</strong>{" "}
-              <a href="mailto:deepakshakya9766@gmail.com" className="text-blue-600 hover:underline">
+              <a
+                href="mailto:deepakshakya9766@gmail.com"
+                className="text-blue-600 hover:underline"
+              >
                 deepakshakya9766@gmail.com
               </a>
             </p>
-            <p><strong>Office Hours:</strong> 10:00 A.M. to 6:00 P.M. (Mon to Fri)</p>
+            <p>
+              <strong>Office Hours:</strong> 10:00 A.M. to 6:00 P.M. (Mon to
+              Fri)
+            </p>
             <p className="text-gray-500 text-xs sm:text-sm pt-3 border-t mt-3">
-              Note: Please send all user-related grievances to the email address mentioned above to
-              ensure a prompt and efficient resolution.
+              Note: Please send all user-related grievances to the email address
+              mentioned above to ensure a prompt and efficient resolution.
             </p>
           </div>
-
         </div>
       </div>
 

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Yaari Zone',
   description: 'Connect with real friends anytime, anywhere with Yaari Zone.',
   icons: {
-    icon: '/favicon.png', // ya '/favicon.png'
+    icon: '/new-logo.png', // ya '/favicon.png'
   },
 };
 

@@ -145,7 +145,7 @@ export function Footer() {
         <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-[114px] py-5 sm:py-6
           flex flex-col sm:flex-row items-center justify-between gap-2 text-white/40 text-xs sm:text-sm">
           <span>
-            Copyright © {new Date().getFullYear()} – Yaari Zone | All rights reserved
+            Copyright © {new Date().getFullYear()} – Shakya Technology | All rights reserved
           </span>
           <span className="hidden sm:block">Made with ♥ Brave Solution</span>
         </div>

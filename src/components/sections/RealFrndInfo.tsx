@@ -19,7 +19,7 @@ export default function RealFrndInfo() {
         <p className="text-gray-700 text-lg leading-relaxed mb-8">
           Unlike other apps, YaariZone is not just about perfect pictures and curated profiles;
           it is a platform to meet friends online. In this space, people connect through audio,
-          video, communities, and authentic, meaningful connections. With no filters and no pretenses,
+           communities, and authentic, meaningful connections. With no filters and no pretenses,
           you meet people for who they are, not how they look.
         </p>
 
@@ -50,12 +50,7 @@ export default function RealFrndInfo() {
             - Verified spaces, active moderation, and community-driven safety make YaariZone a trusted hangout.
           </li>
 
-          <li className="text-gray-700 text-lg">
-            <span className="font-semibold text-gray-900">
-              Fun & Interactive
-            </span>{" "}
-            - Go beyond chatting and join video chats to make things more exciting.
-          </li>
+          
         </ul>
 
         {/* Why Section */}

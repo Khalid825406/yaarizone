@@ -44,7 +44,9 @@ function Card({
         >
           {icon}
         </div>
-        <h2 className="text-base sm:text-lg font-bold text-gray-900">{title}</h2>
+        <h2 className="text-base sm:text-lg font-bold text-gray-900">
+          {title}
+        </h2>
       </div>
       {children}
     </div>
@@ -54,7 +56,10 @@ function Card({
 function Bullet({ text }: { text: string }) {
   return (
     <li className="flex items-start gap-2.5 text-sm sm:text-base text-gray-700">
-      <CheckCircle2 className="w-4 h-4 mt-0.5 shrink-0" style={{ color: "#e91e8c" }} />
+      <CheckCircle2
+        className="w-4 h-4 mt-0.5 shrink-0"
+        style={{ color: "#e91e8c" }}
+      />
       <span>{text}</span>
     </li>
   );
@@ -92,7 +97,6 @@ export default function CommunityGuidelines() {
 
       <div className="max-w-[84rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
         <div className="bg-gray-50 text-black rounded-2xl shadow-lg p-5 sm:p-8 md:p-10 border border-gray-200">
-
           {/* LAST UPDATED */}
           <p className="mb-5 font-medium text-sm sm:text-base">
             <strong>Last Updated:</strong> 17 Sep, 2025
@@ -101,29 +105,33 @@ export default function CommunityGuidelines() {
           {/* INTRO */}
           <div
             className="rounded-xl p-4 sm:p-5 mb-8 text-sm sm:text-base text-gray-700 leading-relaxed border"
-            style={{ borderColor: "#e91e8c33", background: "linear-gradient(135deg, #fdf2f8, #eff6ff)" }}
+            style={{
+              borderColor: "#e91e8c33",
+              background: "linear-gradient(135deg, #fdf2f8, #eff6ff)",
+            }}
           >
             <p className="mb-3">
-              These Content and Community Guidelines ("Guidelines") govern your use of the Yaari Zone
-              mobile application ("Platform"). They are a crucial part of and should be read in
-              conjunction with the Platform's <strong>Terms of Use</strong> and{" "}
+              These Content and Community Guidelines ("Guidelines") govern your
+              use of the Yaari Zone mobile application ("Platform"). They are a
+              crucial part of and should be read in conjunction with the
+              Platform's <strong>Terms of Use</strong> and{" "}
               <strong>Privacy Policy</strong>.
             </p>
             <p className="mb-3">
-              Our Platform connects people from across India. While the community is diverse and
-              receptive to a variety of content, the Platform is always accessed by users over 18 years
-              of age. To ensure a safe environment for creative expression, we have implemented strict
-              guidelines governing use of the Platform.
+              Our Platform connects people from across India. While the
+              community is diverse and receptive to a variety of content, the
+              Platform is always accessed by users over 18 years of age. To
+              ensure a safe environment for creative expression, we have
+              implemented strict guidelines governing use of the Platform.
             </p>
             <p>
-              We reserve the right to modify these Guidelines from time to time. Your continued use of
-              the Platform after the effective date of any changes constitutes your acceptance of the
-              new Guidelines.
+              We reserve the right to modify these Guidelines from time to time.
+              Your continued use of the Platform after the effective date of any
+              changes constitutes your acceptance of the new Guidelines.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
-
             {/* ── SECTION 1: CONTENT GUIDELINES ── */}
             <SectionHeading label="1. Content Guidelines" />
 
@@ -131,22 +139,28 @@ export default function CommunityGuidelines() {
             <div className="sm:col-span-2">
               <Card icon={<Flag className="w-5 h-5" />} title="Overview">
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  We actively remove content that is prohibited on our Platform and violates both our
-                  Guidelines and applicable Indian laws. If such content comes to our attention, we may
-                  take it down or restrict access to user accounts. We encourage you to report any
-                  content that violates these Guidelines. We do not welcome content intended to cause
-                  discomfort, spread hate speech or abuse, promote violence and illegal activities, or
-                  that is deceptive.
+                  We actively remove content that is prohibited on our Platform
+                  and violates both our Guidelines and applicable Indian laws.
+                  If such content comes to our attention, we may take it down or
+                  restrict access to user accounts. We encourage you to report
+                  any content that violates these Guidelines. We do not welcome
+                  content intended to cause discomfort, spread hate speech or
+                  abuse, promote violence and illegal activities, or that is
+                  deceptive.
                 </p>
               </Card>
             </div>
 
             {/* a. APPLICABLE LAWS */}
-            <Card icon={<Scale className="w-5 h-5" />} title="a. Adherence to Applicable Laws">
+            <Card
+              icon={<Scale className="w-5 h-5" />}
+              title="a. Adherence to Applicable Laws"
+            >
               <p className="text-sm sm:text-base text-gray-700 mb-3 leading-relaxed">
-                All content uploaded, posted, commented on, or shared on our Platform must adhere to
-                the laws of India, including the Bharatiya Nyaya Sanhita, 2023 and the Information
-                Technology Act, 2000.
+                All content uploaded, posted, commented on, or shared on our
+                Platform must adhere to the laws of India, including the
+                Bharatiya Nyaya Sanhita, 2023 and the Information Technology
+                Act, 2000.
               </p>
               <ul className="space-y-2.5">
                 <Bullet text="Content must not threaten the unity, integrity, defence, security, or sovereignty of India." />
@@ -156,10 +170,14 @@ export default function CommunityGuidelines() {
             </Card>
 
             {/* b. NUDITY */}
-            <Card icon={<EyeOff className="w-5 h-5" />} title="b. Nudity and Pornography">
+            <Card
+              icon={<EyeOff className="w-5 h-5" />}
+              title="b. Nudity and Pornography"
+            >
               <p className="text-sm sm:text-base text-gray-700 mb-3">
-                Limited sexual imagery is allowed only for artistic, educational, or satirical purposes.
-                The following are strictly prohibited:
+                Limited sexual imagery is allowed only for artistic,
+                educational, or satirical purposes. The following are strictly
+                prohibited:
               </p>
               <ul className="space-y-2.5">
                 <Bullet text="Obscene, sexually explicit, pornographic, or nude content depicting sexual activities or private parts." />
@@ -171,10 +189,13 @@ export default function CommunityGuidelines() {
             </Card>
 
             {/* c. HARASSMENT */}
-            <Card icon={<UserX className="w-5 h-5" />} title="c. Harassment or Bullying">
+            <Card
+              icon={<UserX className="w-5 h-5" />}
+              title="c. Harassment or Bullying"
+            >
               <p className="text-sm sm:text-base text-gray-700 mb-3">
-                We have a zero-tolerance policy for harassment or bullying. The following are
-                violations:
+                We have a zero-tolerance policy for harassment or bullying. The
+                following are violations:
               </p>
               <ul className="space-y-2.5">
                 <Bullet text="Posting abusive language, curse words, morphed images, or malicious recordings." />
@@ -186,9 +207,13 @@ export default function CommunityGuidelines() {
             </Card>
 
             {/* d. IP */}
-            <Card icon={<Music className="w-5 h-5" />} title="d. Intellectual Property">
+            <Card
+              icon={<Music className="w-5 h-5" />}
+              title="d. Intellectual Property"
+            >
               <p className="text-sm sm:text-base text-gray-700 mb-3">
-                We safeguard intellectual property rights and consider violations serious misconduct.
+                We safeguard intellectual property rights and consider
+                violations serious misconduct.
               </p>
               <ul className="space-y-2.5">
                 <Bullet text="Do not post content copied from individuals or organisations that own the intellectual property rights." />
@@ -201,8 +226,9 @@ export default function CommunityGuidelines() {
             {/* e. VIOLENCE */}
             <Card icon={<Swords className="w-5 h-5" />} title="e. Violence">
               <p className="text-sm sm:text-base text-gray-700 mb-3">
-                Violence includes content that glorifies or incites violence, or depicts physical
-                violence or animal cruelty. Prohibited examples:
+                Violence includes content that glorifies or incites violence, or
+                depicts physical violence or animal cruelty. Prohibited
+                examples:
               </p>
               <ul className="space-y-2.5">
                 <Bullet text="Content that promotes dangerous and illegal activities." />
@@ -211,17 +237,21 @@ export default function CommunityGuidelines() {
                 <Bullet text="Content providing instructions on how to make or use explosives or firearms." />
               </ul>
               <Warning>
-                Educational, newsworthy, or fictional violent content may be permitted in accordance
-                with these Guidelines. If you believe someone is in imminent danger, contact local law
-                enforcement immediately.
+                Educational, newsworthy, or fictional violent content may be
+                permitted in accordance with these Guidelines. If you believe
+                someone is in imminent danger, contact local law enforcement
+                immediately.
               </Warning>
             </Card>
 
             {/* f. HATE SPEECH */}
-            <Card icon={<Megaphone className="w-5 h-5" />} title="f. Hate Speech and Propaganda">
+            <Card
+              icon={<Megaphone className="w-5 h-5" />}
+              title="f. Hate Speech and Propaganda"
+            >
               <p className="text-sm sm:text-base text-gray-700 mb-3">
-                Content that promotes violence or fosters hostility against any individual or group is
-                prohibited:
+                Content that promotes violence or fosters hostility against any
+                individual or group is prohibited:
               </p>
               <ul className="space-y-2.5">
                 <Bullet text="Content spreading hatred based on religion, caste, ethnicity, community, nationality, disability, disease, or gender." />
@@ -230,16 +260,20 @@ export default function CommunityGuidelines() {
                 <Bullet text="Content fostering hostility between groups based on religion or caste with the intent to incite violence." />
               </ul>
               <Warning>
-                Content that seeks to increase awareness about these issues or challenge them may be
-                allowed, as long as it is clearly posted with that intention.
+                Content that seeks to increase awareness about these issues or
+                challenge them may be allowed, as long as it is clearly posted
+                with that intention.
               </Warning>
             </Card>
 
             {/* g. SELF-HARM */}
-            <Card icon={<HeartCrack className="w-5 h-5" />} title="g. Abuse, Self-Injury or Suicide">
+            <Card
+              icon={<HeartCrack className="w-5 h-5" />}
+              title="g. Abuse, Self-Injury or Suicide"
+            >
               <p className="text-sm sm:text-base text-gray-700 mb-3">
-                We do not allow content that depicts or promotes suicide, self-injury, or similar
-                tendencies:
+                We do not allow content that depicts or promotes suicide,
+                self-injury, or similar tendencies:
               </p>
               <ul className="space-y-2.5">
                 <Bullet text="Content depicting or encouraging physical, mental, sexual, or psychological abuse of any individual." />
@@ -247,16 +281,19 @@ export default function CommunityGuidelines() {
                 <Bullet text="Content that identifies, tags, derogates, or mocks victims and survivors of abuse, domestic violence, or any other form of violence." />
               </ul>
               <Warning>
-                Content that offers support and shares coping experiences in alignment with these
-                Guidelines is permitted.
+                Content that offers support and shares coping experiences in
+                alignment with these Guidelines is permitted.
               </Warning>
             </Card>
 
             {/* h. ILLEGAL */}
-            <Card icon={<Ban className="w-5 h-5" />} title="h. Illegal Activities">
+            <Card
+              icon={<Ban className="w-5 h-5" />}
+              title="h. Illegal Activities"
+            >
               <p className="text-sm sm:text-base text-gray-700 mb-3">
-                We have a zero-tolerance policy for content that advocates or promotes illegal
-                activities:
+                We have a zero-tolerance policy for content that advocates or
+                promotes illegal activities:
               </p>
               <ul className="space-y-2.5">
                 <Bullet text="Content related to organised crime, weapons, firearms, explosives, violence, terrorist activities, or kidnapping." />
@@ -268,15 +305,24 @@ export default function CommunityGuidelines() {
             </Card>
 
             {/* i. NON-CONSENSUAL */}
-            <Card icon={<UserCheck className="w-5 h-5" />} title="i. Non-Consensual Content">
+            <Card
+              icon={<UserCheck className="w-5 h-5" />}
+              title="i. Non-Consensual Content"
+            >
               <p className="text-sm sm:text-base text-gray-700 mb-3">
                 Content that impersonates another individual is prohibited:
               </p>
+
               <ul className="space-y-2.5">
                 <Bullet text="Do not post pictures or videos of other people who have not given express consent to such content being posted." />
+
                 <Bullet text="Do not post content that is invasive of anyone's privacy." />
+
                 <Bullet text="Revealing someone's personal data — including contact info, passwords, address, financial info, Aadhaar details, or healthcare information — is strictly prohibited." />
+
                 <Bullet text="Threatening someone to reveal or use their sensitive personal information will be considered harassment." />
+
+                <Bullet text="This application supports audio communication only. Video calling or sharing visual content during calls is not available." />
               </ul>
             </Card>
 
@@ -292,7 +338,10 @@ export default function CommunityGuidelines() {
             </Card>
 
             {/* k. MISINFORMATION */}
-            <Card icon={<MessageSquareWarning className="w-5 h-5" />} title="k. Misinformation">
+            <Card
+              icon={<MessageSquareWarning className="w-5 h-5" />}
+              title="k. Misinformation"
+            >
               <ul className="space-y-2.5">
                 <Bullet text="Content that is misleading or intentionally spreads misinformation, disinformation, or clearly false information is prohibited." />
                 <Bullet text="Hoaxes or fake propaganda designed to deceive users or the public are not allowed." />
@@ -300,23 +349,30 @@ export default function CommunityGuidelines() {
                 <Bullet text="Manipulated media (deepfakes) that shows people saying or doing things they never said or did is not permitted." />
               </ul>
               <Warning>
-                Satire and parody content is permitted, as long as it does not mislead other users or
-                spread false information.
+                Satire and parody content is permitted, as long as it does not
+                mislead other users or spread false information.
               </Warning>
             </Card>
 
             {/* ── SECTION 2: COMMUNITY GUIDELINES ── */}
             <SectionHeading label="2. Community Guidelines" />
 
-            <Card icon={<UserX className="w-5 h-5" />} title="a. Multiple / Fake Profiles">
+            <Card
+              icon={<UserX className="w-5 h-5" />}
+              title="a. Multiple / Fake Profiles"
+            >
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                Creating a fake profile of an individual or organisation, including government officials
-                or entities, and impersonating someone in a deceptive manner — regardless of the intent
-                to harass or bully — is strictly prohibited.
+                Creating a fake profile of an individual or organisation,
+                including government officials or entities, and impersonating
+                someone in a deceptive manner — regardless of the intent to
+                harass or bully — is strictly prohibited.
               </p>
             </Card>
 
-            <Card icon={<ShieldCheck className="w-5 h-5" />} title="b. Safety and Security">
+            <Card
+              icon={<ShieldCheck className="w-5 h-5" />}
+              title="b. Safety and Security"
+            >
               <ul className="space-y-2.5">
                 <Bullet text="Harassing someone or using abusive language while in a call is prohibited." />
                 <Bullet text="Do not do anything that may make other users feel uncomfortable." />
@@ -325,11 +381,15 @@ export default function CommunityGuidelines() {
             </Card>
 
             <div className="sm:col-span-2">
-              <Card icon={<Ban className="w-5 h-5" />} title="d. Enforcement Actions against Violators">
+              <Card
+                icon={<Ban className="w-5 h-5" />}
+                title="d. Enforcement Actions against Violators"
+              >
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3">
-                  We act quickly against those who violate these Guidelines. Our decision to take action
-                  against any account is final and binding. If your profile violates these Guidelines,
-                  we may take appropriate measures and restrict your access.
+                  We act quickly against those who violate these Guidelines. Our
+                  decision to take action against any account is final and
+                  binding. If your profile violates these Guidelines, we may
+                  take appropriate measures and restrict your access.
                 </p>
                 <ul className="space-y-2.5">
                   <Bullet text="Any attempt to bypass enforcement by creating additional accounts, using false identities, or impersonating others will lead to long-term access restrictions." />
@@ -344,32 +404,51 @@ export default function CommunityGuidelines() {
 
             <Card icon={<Flag className="w-5 h-5" />} title="a. Reporting">
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                When you see any content or activity that violates these Guidelines, please tap or click
-                on the <strong>'Report'</strong> option. Our Admin team will review it and, if found in
-                violation, will remove the content and take appropriate action. For content you dislike
-                but which does not violate these Guidelines, use the <strong>'Block'</strong> option.
+                When you see any content or activity that violates these
+                Guidelines, please tap or click on the <strong>'Report'</strong>{" "}
+                option. Our Admin team will review it and, if found in
+                violation, will remove the content and take appropriate action.
+                For content you dislike but which does not violate these
+                Guidelines, use the <strong>'Block'</strong> option.
               </p>
             </Card>
 
-            <Card icon={<ShieldCheck className="w-5 h-5" />} title="b. Intermediary Status">
+            <Card
+              icon={<ShieldCheck className="w-5 h-5" />}
+              title="b. Intermediary Status"
+            >
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                We serve as an intermediary in accordance with applicable laws and regulations. Our
-                accountability does not extend to services and features provided by third parties, even
-                when accessed through our Services. Any incidents arising on our Platform are subject to
-                the jurisdiction and limitations established by Indian law.
+                We serve as an intermediary in accordance with applicable laws
+                and regulations. Our accountability does not extend to services
+                and features provided by third parties, even when accessed
+                through our Services. Any incidents arising on our Platform are
+                subject to the jurisdiction and limitations established by
+                Indian law.
               </p>
             </Card>
 
             {/* GRIEVANCE OFFICER — full width */}
             <div className="sm:col-span-2">
-              <Card icon={<Mail className="w-5 h-5" />} title="c. Grievance Officer">
+              <Card
+                icon={<Mail className="w-5 h-5" />}
+                title="c. Grievance Officer"
+              >
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div className="space-y-1.5 text-sm sm:text-base text-gray-700">
-                    <p><strong>Name:</strong> Deepak Shakya</p>
-                    <p><strong>Address:</strong>Chilsari, Kaimganj, Farrukhabad, Uttar Pradesh - 209502</p>
-                    <p><strong>Office Hours:</strong> 10:00 A.M. to 6:00 P.M. (Mon to Fri)</p>
+                    <p>
+                      <strong>Name:</strong> Deepak Shakya
+                    </p>
+                    <p>
+                      <strong>Address:</strong>Chilsari, Kaimganj, Farrukhabad,
+                      Uttar Pradesh - 209502
+                    </p>
+                    <p>
+                      <strong>Office Hours:</strong> 10:00 A.M. to 6:00 P.M.
+                      (Mon to Fri)
+                    </p>
                     <p className="text-xs sm:text-sm text-gray-500 pt-1">
-                      Please send all user-related grievances to the email address provided.
+                      Please send all user-related grievances to the email
+                      address provided.
                     </p>
                   </div>
                   <a
@@ -388,42 +467,86 @@ export default function CommunityGuidelines() {
             <SectionHeading label="4. Right to Challenge" />
 
             <div className="sm:col-span-2">
-              <Card icon={<MessageSquareWarning className="w-5 h-5" />} title="Appeal Process">
+              <Card
+                icon={<MessageSquareWarning className="w-5 h-5" />}
+                title="Appeal Process"
+              >
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                  If your content is removed from our Platform, we will notify you and explain our
-                  reasons. If you believe your content has been unfairly taken down, you can submit an
-                  in-app appeal or contact us at{" "}
-                  <a href="mailto:deepakshakya9766@gmail.com" className="text-blue-600 hover:underline font-medium">
+                  If your content is removed from our Platform, we will notify
+                  you and explain our reasons. If you believe your content has
+                  been unfairly taken down, you can submit an in-app appeal or
+                  contact us at{" "}
+                  <a
+                    href="mailto:deepakshakya9766@gmail.com"
+                    className="text-blue-600 hover:underline font-medium"
+                  >
                     deepakshakya9766@gmail.com
                   </a>{" "}
-                  to contest the removal. We will review the content again and decide whether the appeal
-                  is valid.
+                  to contest the removal. We will review the content again and
+                  decide whether the appeal is valid.
                 </p>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                  In addition to actions taken by us, you may also incur personal, civil, and criminal
-                  liability for violations. Below is an illustrative list of applicable laws:
+                  In addition to actions taken by us, you may also incur
+                  personal, civil, and criminal liability for violations. Below
+                  is an illustrative list of applicable laws:
                 </p>
                 <div className="overflow-x-auto rounded-xl border">
                   <table className="w-full min-w-[480px] text-xs sm:text-sm">
                     <thead>
-                      <tr style={{ background: GRADIENT }} className="text-white">
-                        <th className="p-3 text-left font-semibold border-r border-white/20">Violation</th>
-                        <th className="p-3 text-left font-semibold">Applicable Law</th>
+                      <tr
+                        style={{ background: GRADIENT }}
+                        className="text-white"
+                      >
+                        <th className="p-3 text-left font-semibold border-r border-white/20">
+                          Violation
+                        </th>
+                        <th className="p-3 text-left font-semibold">
+                          Applicable Law
+                        </th>
                       </tr>
                     </thead>
                     <tbody className="text-gray-700">
                       {[
-                        ["Infringing on someone else's rights", "Digital Personal Data Protection Act, 2023 [S.33(1)]"],
-                        ["Explicit / pornographic / harassing content or illegal activities", "Bharatiya Nyaya Sanhita, 2023 [S. 196, 294, 295]; IT Act, 2000 [S. 66E, 67, 67A]; POCSO Act, 2012 [S. 12]"],
-                        ["Content harmful to children", "Juvenile Justice Act, 2015 [S. 75]; IT Act, 2000 [S. 67B]"],
-                        ["Infringing patents, trademarks, or copyrights", "Trade Marks Act, 1999 [S. 29]; Copyright Act, 1957 [S.51]"],
-                        ["Misinformation / impersonation / false origin", "Bharatiya Nyaya Sanhita, 2023 [S. 212, 319, 336, 353]; IT Act, 2000 [S. 66D]"],
-                        ["Threatening national security or inciting offences", "IT Act, 2000 [S. 66F]"],
-                        ["Containing malware or disruptive computer code", "IT Act, 2000 [S. 43 and 66]"],
-                        ["Advertising or promoting impermissible online games", "Consumer Protection Act, 2019 [S. 89]"],
+                        [
+                          "Infringing on someone else's rights",
+                          "Digital Personal Data Protection Act, 2023 [S.33(1)]",
+                        ],
+                        [
+                          "Explicit / pornographic / harassing content or illegal activities",
+                          "Bharatiya Nyaya Sanhita, 2023 [S. 196, 294, 295]; IT Act, 2000 [S. 66E, 67, 67A]; POCSO Act, 2012 [S. 12]",
+                        ],
+                        [
+                          "Content harmful to children",
+                          "Juvenile Justice Act, 2015 [S. 75]; IT Act, 2000 [S. 67B]",
+                        ],
+                        [
+                          "Infringing patents, trademarks, or copyrights",
+                          "Trade Marks Act, 1999 [S. 29]; Copyright Act, 1957 [S.51]",
+                        ],
+                        [
+                          "Misinformation / impersonation / false origin",
+                          "Bharatiya Nyaya Sanhita, 2023 [S. 212, 319, 336, 353]; IT Act, 2000 [S. 66D]",
+                        ],
+                        [
+                          "Threatening national security or inciting offences",
+                          "IT Act, 2000 [S. 66F]",
+                        ],
+                        [
+                          "Containing malware or disruptive computer code",
+                          "IT Act, 2000 [S. 43 and 66]",
+                        ],
+                        [
+                          "Advertising or promoting impermissible online games",
+                          "Consumer Protection Act, 2019 [S. 89]",
+                        ],
                       ].map(([violation, law], i) => (
-                        <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                          <td className="p-3 border-r border-gray-100 align-top">{violation}</td>
+                        <tr
+                          key={i}
+                          className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                        >
+                          <td className="p-3 border-r border-gray-100 align-top">
+                            {violation}
+                          </td>
                           <td className="p-3 align-top">{law}</td>
                         </tr>
                       ))}
@@ -431,12 +554,12 @@ export default function CommunityGuidelines() {
                   </table>
                 </div>
                 <p className="text-xs sm:text-sm text-gray-500 mt-3">
-                  If necessary, we will cooperate with legal authorities and law enforcement agencies.
-                  Please note that we are not obligated to assist you.
+                  If necessary, we will cooperate with legal authorities and law
+                  enforcement agencies. Please note that we are not obligated to
+                  assist you.
                 </p>
               </Card>
             </div>
-
           </div>
         </div>
       </div>
