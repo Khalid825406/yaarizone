@@ -35,6 +35,7 @@ const footerLinks = [
     links: [
       { label: 'Coins Policy', href: '/CoinsPolicy' },
       { label: 'Community Guidelines', href: '/Community' },
+      { label: 'Delete Request', href: '/delete-request' },
     ],
   },
 ];
