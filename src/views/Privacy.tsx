@@ -102,10 +102,10 @@ export default function Privacy() {
                   ]}
                 />
                 <Row
-                  left={`Communications and Support Data\nContent of voice (audio) calls between users (stored on device). Any information shared with our customer support team.`}
+                  left={`Communications and Support Data\nContent of voice (audio) and video calls between users (streamed in real-time, not stored on servers). Any information shared with our customer support team.`}
                   right={[
-                    "To enable secure and reliable audio (voice) communication between users.",
-                    "We do not access, monitor, or share your audio call data with any third party.",
+                    "To enable secure and reliable audio (voice) and video communication between users.",
+                    "We do not access, monitor, record, or share your audio/video call data with any third party.",
                     "To investigate and resolve user-reported issues effectively.",
                     "To enhance our support services and overall user experience.",
                   ]}
@@ -119,13 +119,13 @@ export default function Privacy() {
                   ]}
                 />
                 <Row
-                  left={`Device Data\nDevice attributes (OS, battery, storage), operations, identifiers, Bluetooth/Wi-Fi signals, GPS location, microphone access, network info, and app usage data.`}
+                  left={`Device Data\nDevice attributes (OS, battery, storage), operations, identifiers, Bluetooth/Wi-Fi signals, GPS location, camera and microphone access, network info, and app usage data.`}
                   right={[
-                    "To facilitate audio communication (voice calls) on the Platform.",
+                    "To facilitate audio and video communication (voice and video calls) on the Platform.",
+                    "To allow you to upload profile photos, share images, and use camera-based features within the app.",
                     "To customise our Platform to suit your mobile device.",
                     "To optimise your user experience and improve the Platform's performance.",
                     "To verify your identity and enforce our policies.",
-                    "To enable seamless audio sharing and communication features.",
                   ]}
                 />
                 <Row
@@ -137,6 +137,115 @@ export default function Privacy() {
                 />
               </tbody>
             </table>
+          </div>
+
+          {/* ── DEVICE PERMISSIONS ── */}
+          <h2 className="text-lg sm:text-xl font-bold mb-3">
+            Device Permissions We Request
+          </h2>
+          <p className="mb-4 text-sm sm:text-base leading-relaxed text-gray-700">
+            To deliver the full experience of Yaari Zone, we may request the
+            following permissions on your device. All permissions are requested
+            only when needed and with your explicit consent.
+          </p>
+
+          <div className="space-y-4 mb-8">
+
+            {/* Camera */}
+            <div className="border rounded-xl p-4 sm:p-5 bg-gray-50">
+         <p className="font-semibold text-sm sm:text-base mb-1 flex items-center gap-2">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-5 h-5 text-gray-800"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M3 7h4l2-2h6l2 2h4v12H3V7z"
+    />
+    <circle cx="12" cy="13" r="3" />
+  </svg>
+
+  Camera Permission
+</p>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+    We may request access to your device camera to allow you to upload profile photos, share images, or use features within the app. We do not access your camera without your consent.
+              </p>
+            </div>
+
+            {/* Microphone */}
+            <div className="border rounded-xl p-4 sm:p-5 bg-gray-50">
+              <p className="font-semibold text-sm sm:text-base mb-1 flex items-center gap-2">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-5 h-5 text-gray-800"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M12 1a3 3 0 00-3 3v6a3 3 0 006 0V4a3 3 0 00-3-3z"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M19 10v2a7 7 0 01-14 0v-2"
+    />
+    <line x1="12" y1="19" x2="12" y2="23" strokeLinecap="round" />
+    <line x1="8" y1="23" x2="16" y2="23" strokeLinecap="round" />
+  </svg>
+
+  Microphone Permission
+</p>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                Microphone access is required to enable voice and video calls on
+                the Platform. We do not record, store, or share your audio
+                without your knowledge. Microphone access is only active during
+                live calls.
+              </p>
+            </div>
+
+            {/* Storage */}
+            <div className="border rounded-xl p-4 sm:p-5 bg-gray-50">
+ <p className="font-semibold text-sm sm:text-base mb-1 flex items-center gap-2">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-5 h-5 text-gray-800"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M4 6a2 2 0 012-2h12a2 2 0 012 2v4H4V6z"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M4 10h16v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8z"
+    />
+    <circle cx="8" cy="14" r="1" />
+  </svg>
+
+  Storage Permission
+</p>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                Storage access is required to save temporary cache files and
+                allow you to upload images from your gallery. We do not read or
+                access any personal files stored on your device beyond what you
+                explicitly choose to share.
+              </p>
+            </div>
+
           </div>
 
           {/* ── DISCLOSURE ── */}

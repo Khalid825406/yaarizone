@@ -9,7 +9,7 @@ const testimonials = [
     name: "Priyanka",
     image: "/user1.png",
     content:
-      "Mujhe lagta tha online dosti fake hoti hai, but YaariZone pe mujhe genuine like-minded log mile. Yahan pics ki tension hi nahi, bas audio mein securely baatein karo dil se. Ab toh roz naye logon se baatein karti hoon.",
+      "Mujhe lagta tha online dosti fake hoti hai, but YaariZone pe mujhe genuinely like-minded log mile. Yahan pics ki tension hi nahi — chahe audio call pe dil se baat karo ya video call pe face-to-face connect ho jao, sab kuch secure feel hota hai. Ab toh roz naye logon se baatein karti hoon aur har din kuch naya experience milta hai.",
   },
   {
     name: "Suhani",

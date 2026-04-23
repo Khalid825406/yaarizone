@@ -77,10 +77,10 @@ export default function Terms() {
 
           <p className="mb-4 text-sm sm:text-base">
             Yaari Zone is a platform crafted to facilitate connections with new individuals, fostering
-            the development of friendships through audio interactions. Our primary service
-            aims to enable users to find new friends and participate in one-on-one conversations based
-            on common interests, geographical location, or other personalised preferences
-            ("Service/Services").
+            the development of friendships through audio and video interactions. Our primary service
+            aims to enable users to find new friends and participate in one-on-one conversations —
+            including voice and video calls — based on common interests, geographical location, or other
+            personalised preferences ("Service/Services").
           </p>
 
           <p className="mb-8 text-sm sm:text-base">
@@ -109,7 +109,17 @@ export default function Terms() {
           </p>
 
           <ul className="list-disc pl-5 sm:pl-6 mb-4 space-y-2 text-sm sm:text-base text-gray-700">
-        
+            <li>
+              <strong>Camera:</strong> This access is necessary to allow you to upload profile photos,
+              share images, and participate in video calls directly within the app. We do not access
+              your camera without your explicit consent, and it is only active when you are using a
+              camera-dependent feature.
+            </li>
+            <li>
+              <strong>Microphone:</strong> Microphone access is required to enable voice and video calls
+              on the Platform. We do not record, store, or share your audio without your knowledge.
+              Microphone access is only active during live calls.
+            </li>
             <li>
               <strong>Device Storage:</strong> This permission is required for storing temporary data,
               cache files, and content you may choose to download or save from the platform.
@@ -119,8 +129,8 @@ export default function Terms() {
           <p className="mb-8 text-sm sm:text-base">
             We do not read or use any information stored on your mobile device without your explicit
             permission. The permissions are strictly to provide and improve our Services for you. If
-            you choose to deny any of these permissions, some features of the Platform might not
-            function properly.
+            you choose to deny any of these permissions, some features of the Platform — including voice
+            and video calls — might not function properly.
           </p>
 
           {/* ── PRIVACY POLICY ── */}
@@ -186,7 +196,16 @@ export default function Terms() {
               required by law.
             </Commitment>
 
-            <Commitment letter="d" title="Account Termination and Content Removal">
+            <Commitment letter="d" title="Appropriate Conduct During Voice and Video Calls">
+              While using voice or video call features on the Platform, you must behave respectfully
+              and in accordance with our Community Guidelines. You must not use calls to harass,
+              intimidate, or cause discomfort to other users. Any misuse of the audio or video call
+              features — including sharing inappropriate content, recording others without consent, or
+              engaging in unlawful behaviour — may result in immediate suspension or termination of
+              your account.
+            </Commitment>
+
+            <Commitment letter="e" title="Account Termination and Content Removal">
               Your use of our Platform is governed by the Yaari Zone Content and Community Guidelines.
               If multiple valid reports are received regarding persistent violations, or if the violation
               is severe, we may temporarily suspend or permanently terminate your account. If you
@@ -197,7 +216,7 @@ export default function Terms() {
               </a>.
             </Commitment>
 
-            <Commitment letter="e" title="Content Rights and Liabilities">
+            <Commitment letter="f" title="Content Rights and Liabilities">
               We do not claim ownership of any content shared by you, and the intellectual property
               rights in such content remain with you. By sharing, posting, or uploading content through
               our Services, you grant us a non-exclusive, royalty-free, transferable, sub-licensable,
@@ -207,7 +226,7 @@ export default function Terms() {
               content you disseminate on our Platform.
             </Commitment>
 
-            <Commitment letter="f" title="No Attempt to Disrupt or Jeopardise Yaari Zone Services">
+            <Commitment letter="g" title="No Attempt to Disrupt or Jeopardise Yaari Zone Services">
               You agree not to interfere with or access non-public sections of our Platform or technical
               systems. You shall not introduce Trojan horses, viruses, worms, or any other malicious
               software, nor use bots, scripts, or automated tools to extract user information. Any
@@ -216,14 +235,14 @@ export default function Terms() {
               reported to relevant law enforcement authorities.
             </Commitment>
 
-            <Commitment letter="g" title="Intermediary Status and Limitation of Liability">
+            <Commitment letter="h" title="Intermediary Status and Limitation of Liability">
               We act as an intermediary as defined under the Information Technology Act, 2000, and the
               IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021. Our role is
               strictly limited to providing a platform that enables users to upload, share, and display
-              content. We do not control what you or others may do on the Platform. We are not liable
-              for any loss of profits, revenues, information, or data, or for consequential, special,
-              indirect, exemplary, punitive, or incidental damages arising to you or others related to
-              these Terms.
+              content, and to communicate via voice and video calls. We do not control what you or
+              others may do on the Platform. We are not liable for any loss of profits, revenues,
+              information, or data, or for consequential, special, indirect, exemplary, punitive, or
+              incidental damages arising to you or others related to these Terms.
             </Commitment>
           </div>
 
@@ -247,7 +266,7 @@ export default function Terms() {
               best and most secure user experience, you may need to periodically update the Yaari Zone
               mobile application. You give us permission to automatically download and install updates
               to the app without any further action from you. If you do not install the latest version,
-              you might not be able to access all our Services.
+              you might not be able to access all our Services, including voice and video call features.
             </Commitment>
 
             <Commitment letter="b" title="Retention of Data">
@@ -297,7 +316,7 @@ export default function Terms() {
             <li>
               <strong>In-App Reporting:</strong> Users and hosts can report profiles and content that
               violates our community guidelines directly within the application — via the content feed,
-              during a live interaction, or through the interaction history option.
+              during a live voice or video interaction, or through the interaction history option.
             </li>
             <li>
               <strong>Report Option:</strong> Users/Hosts can report inappropriate behaviour, content,
@@ -306,8 +325,8 @@ export default function Terms() {
             </li>
             <li>
               <strong>Block Option:</strong> Users/Hosts can block another account, preventing any form
-              of interaction or communication. Once blocked, neither party can contact the other through
-              the application unless the block is lifted.
+              of interaction or communication, including voice and video calls. Once blocked, neither
+              party can contact the other through the application unless the block is lifted.
             </li>
             <li>
               <strong>Email Support:</strong> For general concerns or complaints, please send an email
@@ -334,7 +353,6 @@ export default function Terms() {
             <p className="font-semibold text-gray-800 mb-3">Grievance Officer Details:</p>
             <p><strong>Name:</strong> Deepak Shakya</p>
             <p><strong>Company:</strong> Shakya Technology</p>
-           
             <p><strong>Address:</strong> Chilsari, Kaimganj, Farrukhabad, Uttar Pradesh - 209502</p>
             <p>
               <strong>Email:</strong>{" "}
@@ -356,8 +374,8 @@ export default function Terms() {
             We do not assume any liability for any loss or damage, whether directly or indirectly
             caused by any inaccuracy or incompleteness of information, or a breach of any warranty or
             guarantee resulting from the actions of any user of the Platform. The Platform and Services
-            are provided on an "as is" and "as available" basis, without any representations or
-            warranties, express or implied.
+            — including voice and video call features — are provided on an "as is" and "as available"
+            basis, without any representations or warranties, express or implied.
           </p>
 
           <p className="mb-8 text-sm sm:text-base">

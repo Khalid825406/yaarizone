@@ -12,15 +12,15 @@ export default function RealFrndInfo() {
 
         {/* Intro */}
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          In the circle of likes, swipes, rejections, ghosting, and endless scrolling,
-          YaariZone is here to make you feel what truly matters - real chatters and genuine connections.
+          In the world of likes, swipes, ghosting, and endless scrolling,
+          YaariZone brings back what truly matters - real conversations and genuine human connections.
         </p>
 
         <p className="text-gray-700 text-lg leading-relaxed mb-8">
-          Unlike other apps, YaariZone is not just about perfect pictures and curated profiles;
-          it is a platform to meet friends online. In this space, people connect through audio,
-           communities, and authentic, meaningful connections. With no filters and no pretenses,
-          you meet people for who they are, not how they look.
+          Unlike other platforms focused on looks and profiles, YaariZone helps you connect
+          through real experiences. Start with audio conversations to break the ice,
+          and when you feel comfortable, switch to video calls for a deeper, face-to-face connection.
+          No pressure, no filters - just real people and real vibes.
         </p>
 
         {/* Section */}
@@ -38,9 +38,16 @@ export default function RealFrndInfo() {
 
           <li className="text-gray-700 text-lg">
             <span className="font-semibold text-gray-900">
-              Audio-First, No Pictures
+              Audio & Video Conversations
             </span>{" "}
-            - Focus on voices, thoughts, and real energy instead of staged selfies.
+            - Start with voice chats to connect naturally, then move to secure video calls for real-time bonding.
+          </li>
+
+          <li className="text-gray-700 text-lg">
+            <span className="font-semibold text-gray-900">
+              No Pressure, No Filters
+            </span>{" "}
+            - Connect without worrying about perfect pictures. Be yourself and let conversations lead.
           </li>
 
           <li className="text-gray-700 text-lg">
@@ -49,8 +56,6 @@ export default function RealFrndInfo() {
             </span>{" "}
             - Verified spaces, active moderation, and community-driven safety make YaariZone a trusted hangout.
           </li>
-
-          
         </ul>
 
         {/* Why Section */}
@@ -59,14 +64,14 @@ export default function RealFrndInfo() {
         </h2>
 
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          Because friendships aren’t built on filters or timelines, they’re built on shared laughs,
-          late-night conversations, and finding people who just get you. YaariZone is more than an app -
-          it’s where strangers turn their voices into bonds.
+          Because real friendships aren’t built on filters or timelines - they’re built on shared laughs,
+          late-night conversations, and meaningful moments. Whether it starts with a simple audio chat
+          or grows into a video call, YaariZone helps you create real bonds.
         </p>
 
         <p className="text-gray-700 text-lg leading-relaxed">
-          So, whether you’re here to make new friends online, share your passions, or just find someone
-          to talk to, YaariZone is the perfect place for you.
+          So whether you’re here to make new friends, explore communities, or just find someone
+          to talk to, YaariZone gives you the space to connect - your way.
         </p>
 
       </div>
