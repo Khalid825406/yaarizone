@@ -114,7 +114,8 @@ export function Navbar() {
                 </Link>
               ))}
               <a
-                href="#download"
+                href="https://play.google.com/store/apps/details?id=com.yaarizone.app"
+                target="_blank"
                 className="px-5 lg:px-6 py-2 lg:py-2.5 text-sm whitespace-nowrap text-white rounded-xl font-semibold transition-opacity hover:opacity-90"
                 style={{
                   background:

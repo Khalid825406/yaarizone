@@ -23,8 +23,8 @@ export function DownloadBar() {
     >
       {/* ✅ FIX: Anchor tag added */}
       <a
-        href="#"
-        target="_blank"
+          href="https://play.google.com/store/apps/details?id=com.yaarizone.app"
+          target="_blank"
         rel="noopener noreferrer"
         style={btnStyle}
         className="
