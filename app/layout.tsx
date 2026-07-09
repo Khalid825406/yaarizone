@@ -1,12 +1,9 @@
-import type { Metadata } from 'next';
-import '/globals.css';
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Yaari Zone',
-  description: 'Connect with real friends anytime, anywhere with Yaari Zone.',
-  icons: {
-    icon: '/new-logo.png', // ya '/favicon.png'
-  },
+  title: "Yaari Zone",
+  description: "Connect with real friends anytime, anywhere with Yaari Zone.",
 };
 
 export default function RootLayout({
